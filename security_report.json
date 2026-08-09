@@ -38,6 +38,24 @@
     {
         "ecosystem": "PyPI",
         "package": "requests",
+        "vulnerability_id": "GHSA-x84v-xcm2-53pg",
+        "cve": "CVE-2018-18074",
+        "severity": "CVSS:3.1",
+        "published": "2018-10-29",
+        "description": "Insufficiently Protected Credentials in Requests"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "requests",
+        "vulnerability_id": "PYSEC-2018-28",
+        "cve": "CVE-2018-18074",
+        "severity": "N/A",
+        "published": "2018-10-09",
+        "description": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "requests",
         "vulnerability_id": "PYSEC-2023-74",
         "cve": "CVE-2023-32681",
         "severity": "N/A",
@@ -73,79 +91,556 @@
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-cpwx-vrp4-4pq7",
-        "cve": "CVE-2025-27516",
+        "package": "django",
+        "vulnerability_id": "GHSA-2gwj-7jmv-h26r",
+        "cve": "CVE-2022-28346",
+        "severity": "CVSS:3.1",
+        "published": "2022-04-13",
+        "description": "SQL Injection in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-2m34-jcjv-45xf",
+        "cve": "CVE-2020-13596",
+        "severity": "CVSS:3.1",
+        "published": "2020-06-05",
+        "description": "XSS in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-3gh2-xw74-jmcw",
+        "cve": "CVE-2020-9402",
+        "severity": "CVSS:3.1",
+        "published": "2020-06-05",
+        "description": "SQL injection in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-3h9f-r86x-qvjx",
+        "cve": "CVE-2026-48588",
+        "severity": "CVSS:3.1",
+        "published": "2026-07-07",
+        "description": "Django: cache middleware may expose private responses when unrelated request cookies are present"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-53qw-q765-4fww",
+        "cve": "CVE-2021-45115",
+        "severity": "CVSS:3.1",
+        "published": "2022-01-12",
+        "description": "Denial-of-service in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-68w8-qjq3-2gfm",
+        "cve": "CVE-2021-33203",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-10",
+        "description": "Path Traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-6cw3-g6wv-c2xv",
+        "cve": "CVE-2022-23833",
+        "severity": "CVSS:3.1",
+        "published": "2022-02-04",
+        "description": "Infinite Loop in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-6w2r-r2m5-xq5w",
+        "cve": "CVE-2025-57833",
+        "severity": "CVSS:3.1",
+        "published": "2025-09-08",
+        "description": "Django is subject to SQL injection through its column aliases"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-7xr5-9hcq-chf9",
+        "cve": "CVE-2025-48432",
+        "severity": "CVSS:3.1",
+        "published": "2025-06-05",
+        "description": "Django Improper Output Neutralization for Logs vulnerability"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-8c5j-9r9f-c6w8",
+        "cve": "CVE-2021-45116",
+        "severity": "CVSS:3.1",
+        "published": "2022-01-12",
+        "description": "Information disclosure in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-8cjm-8mp7-r2xf",
+        "cve": "CVE-2026-8404",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-03",
+        "description": "Django: UpdateCacheMiddleware may disclose cached responses due to case-sensitive Cache-Control handling"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-8qcx-xf44-272x",
+        "cve": "CVE-2026-53878",
+        "severity": "CVSS:3.1",
+        "published": "2026-07-07",
+        "description": "Django: DomainNameValidator permits newline characters that may enable HTTP header injection"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-8x94-hmjh-97hq",
+        "cve": "CVE-2022-36359",
+        "severity": "CVSS:3.1",
+        "published": "2022-08-11",
+        "description": "Django vulnerable to Reflected File Download attack"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-923m-gv2p-w5qp",
+        "cve": "CVE-2026-48587",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-03",
+        "description": "Django: has_vary_header may expose cached responses when Vary values contain whitespace"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-95rw-fx8r-36v6",
+        "cve": "CVE-2022-22818",
+        "severity": "CVSS:3.1",
+        "published": "2022-02-04",
+        "description": "Cross-site Scripting in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-crhf-3pfg-w68w",
+        "cve": "CVE-2026-53877",
+        "severity": "CVSS:3.1",
+        "published": "2026-07-07",
+        "description": " Django: GDALRaster may over-read heap memory when constructed from bytes"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-fr28-569j-53c4",
+        "cve": "CVE-2020-24584",
+        "severity": "CVSS:3.1",
+        "published": "2021-03-18",
+        "description": "Django Incorrect Default Permissions"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-frmv-pr5f-9mcr",
+        "cve": "CVE-2025-64459",
+        "severity": "CVSS:3.1",
+        "published": "2025-11-05",
+        "description": "Django vulnerable to SQL injection via _connector keyword argument in QuerySet and Q objects."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-fvgf-6h6h-3322",
+        "cve": "CVE-2021-3281",
+        "severity": "CVSS:3.1",
+        "published": "2021-03-18",
+        "description": "Django Directory Traversal via archive.extract"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-h7pc-vwp9-298g",
+        "cve": "CVE-2026-6873",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-03",
+        "description": "Django: signed cookies are vulnerable to salt namespace collisions"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-jrh2-hc4r-7jwx",
+        "cve": "CVE-2021-45452",
+        "severity": "CVSS:3.1",
+        "published": "2022-01-12",
+        "description": "Directory-traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-m6gj-h9gm-gw44",
+        "cve": "CVE-2020-24583",
+        "severity": "CVSS:3.1",
+        "published": "2021-03-18",
+        "description": "Django Incorrect Default Permissions"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-p99v-5w3c-jqq9",
+        "cve": "CVE-2021-33571",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-10",
+        "description": "Django Access Control Bypass possibly leading to SSRF, RFI, and LFI attacks "
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-qm57-vhq3-3fwf",
+        "cve": "CVE-2021-32052",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-09",
+        "description": "Header injection possible in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-qw25-v68c-qjf3",
+        "cve": "CVE-2025-64458",
+        "severity": "CVSS:3.1",
+        "published": "2025-11-05",
+        "description": "Django has a denial-of-service vulnerability in HttpResponseRedirect and HttpResponsePermanentRedirect on Windows"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-rrqc-c2jx-6jgv",
+        "cve": "CVE-2024-45231",
+        "severity": "CVSS:3.1",
+        "published": "2024-10-08",
+        "description": "Django allows enumeration of user e-mail addresses"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-rxjp-mfm9-w4wr",
+        "cve": "CVE-2021-31542",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-04",
+        "description": "Path Traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-v6rh-hp5x-86rv",
+        "cve": "CVE-2021-44420",
+        "severity": "CVSS:3.1",
+        "published": "2021-12-09",
+        "description": "Potential bypass of an upstream access control based on URL paths in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-w24h-v9qh-8gxj",
+        "cve": "CVE-2022-28347",
+        "severity": "CVSS:3.1",
+        "published": "2022-04-13",
+        "description": "SQL Injection in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-wpjr-j57x-wxfw",
+        "cve": "CVE-2020-13254",
+        "severity": "CVSS:3.1",
+        "published": "2020-06-05",
+        "description": "Data leakage via cache key collision in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-xgxc-v2qg-chmh",
+        "cve": "CVE-2021-28658",
+        "severity": "CVSS:3.1",
+        "published": "2021-04-08",
+        "description": "Directory Traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-31",
+        "cve": "CVE-2020-13254",
+        "severity": "N/A",
+        "published": "2020-06-03",
+        "description": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. In cases where a memcached backend does not perform key validation, passing malformed cache keys could result in a key collision, and potential data leakage."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-32",
+        "cve": "CVE-2020-13596",
+        "severity": "N/A",
+        "published": "2020-06-03",
+        "description": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. Query parameters generated by the Django admin ForeignKeyRawIdWidget were not properly URL encoded, leading to a possibility of an XSS attack."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-33",
+        "cve": "CVE-2020-24583",
+        "severity": "N/A",
+        "published": "2020-09-01",
+        "description": "An issue was discovered in Django 2.2 before 2.2.16, 3.0 before 3.0.10, and 3.1 before 3.1.1 (when Python 3.7+ is used). FILE_UPLOAD_DIRECTORY_PERMISSIONS mode was not applied to intermediate-level directories created in the process of uploading files. It was also not applied to intermediate-level collected static directories when using the collectstatic management command."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-34",
+        "cve": "CVE-2020-24584",
+        "severity": "N/A",
+        "published": "2020-09-01",
+        "description": "An issue was discovered in Django 2.2 before 2.2.16, 3.0 before 3.0.10, and 3.1 before 3.1.1 (when Python 3.7+ is used). The intermediate-level directories of the filesystem cache had the system's standard umask rather than 0o077."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-36",
+        "cve": "CVE-2020-9402",
+        "severity": "N/A",
+        "published": "2020-03-05",
+        "description": "Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4 allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle. By passing a suitably crafted tolerance to GIS functions and aggregates on Oracle, it was possible to break escaping and inject malicious SQL."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-439",
+        "cve": "CVE-2021-44420",
+        "severity": "N/A",
+        "published": "2021-12-08",
+        "description": "In Django 2.2 before 2.2.25, 3.1 before 3.1.14, and 3.2 before 3.2.10, HTTP requests for URLs with trailing newlines could bypass upstream access control based on URL paths."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-6",
+        "cve": "CVE-2021-28658",
+        "severity": "N/A",
+        "published": "2021-04-06",
+        "description": "In Django 2.2 before 2.2.20, 3.0 before 3.0.14, and 3.1 before 3.1.8, MultiPartParser allowed directory traversal via uploaded files with suitably crafted file names. Built-in upload handlers were not affected by this vulnerability."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-7",
+        "cve": "CVE-2021-31542",
+        "severity": "N/A",
+        "published": "2021-05-05",
+        "description": "In Django 2.2 before 2.2.21, 3.1 before 3.1.9, and 3.2 before 3.2.1, MultiPartParser, UploadedFile, and FieldFile allowed directory traversal via uploaded files with suitably crafted file names."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-8",
+        "cve": "CVE-2021-32052",
+        "severity": "N/A",
+        "published": "2021-05-06",
+        "description": "In Django 2.2 before 2.2.22, 3.1 before 3.1.10, and 3.2 before 3.2.2 (with Python 3.9.5+), URLValidator does not prohibit newlines and tabs (unless the URLField form field is used). If an application uses values with newlines in an HTTP response, header injection can occur. Django itself is unaffected because HttpResponse prohibits newlines in HTTP headers."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-9",
+        "cve": "CVE-2021-3281",
+        "severity": "N/A",
+        "published": "2021-02-02",
+        "description": "In Django 2.2 before 2.2.18, 3.0 before 3.0.12, and 3.1 before 3.1.6, the django.utils.archive.extract method (used by \"startapp --template\" and \"startproject --template\") allows directory traversal via an archive with absolute paths or relative paths with dot segments."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-98",
+        "cve": "CVE-2021-33203",
+        "severity": "N/A",
+        "published": "2021-06-08",
+        "description": "Django before 2.2.24, 3.x before 3.1.12, and 3.2.x before 3.2.4 has a potential directory traversal via django.contrib.admindocs. Staff members could use the TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by application developers to also show file contents, then not only the existence but also the file contents would have been exposed. In other words, there is directory traversal outside of the template root directories."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-99",
+        "cve": "CVE-2021-33571",
+        "severity": "N/A",
+        "published": "2021-06-08",
+        "description": "In Django 2.2 before 2.2.24, 3.x before 3.1.12, and 3.2 before 3.2.4, URLValidator, validate_ipv4_address, and validate_ipv46_address do not prohibit leading zero characters in octal literals. This may allow a bypass of access control that is based on IP addresses. (validate_ipv4_address and validate_ipv46_address are unaffected with Python 3.9.5+..) ."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-1",
+        "cve": "CVE-2021-45115",
+        "severity": "N/A",
+        "published": "2022-01-05",
+        "description": "An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. UserAttributeSimilarityValidator incurred significant overhead in evaluating a submitted password that was artificially large in relation to the comparison values. In a situation where access to user registration was unrestricted, this provided a potential vector for a denial-of-service attack."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-19",
+        "cve": "CVE-2022-22818",
+        "severity": "N/A",
+        "published": "2022-02-03",
+        "description": "The {% debug %} template tag in Django 2.2 before 2.2.27, 3.2 before 3.2.12, and 4.0 before 4.0.2 does not properly encode the current context. This may lead to XSS."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-190",
+        "cve": "CVE-2022-28346",
+        "severity": "N/A",
+        "published": "2022-04-12",
+        "description": "An issue was discovered in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. QuerySet.annotate(), aggregate(), and extra() methods are subject to SQL injection in column aliases via a crafted dictionary (with dictionary expansion) as the passed **kwargs."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-191",
+        "cve": "CVE-2022-28347",
+        "severity": "N/A",
+        "published": "2022-04-12",
+        "description": "A SQL injection issue was discovered in QuerySet.explain() in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. This occurs by passing a crafted dictionary (with dictionary expansion) as the **options argument, and placing the injection payload in an option name."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-2",
+        "cve": "CVE-2021-45116",
+        "severity": "N/A",
+        "published": "2022-01-05",
+        "description": "An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. Due to leveraging the Django Template Language's variable resolution logic, the dictsort template filter was potentially vulnerable to information disclosure, or an unintended method call, if passed a suitably crafted key."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-20",
+        "cve": "CVE-2022-23833",
+        "severity": "N/A",
+        "published": "2022-02-03",
+        "description": "An issue was discovered in MultiPartParser in Django 2.2 before 2.2.27, 3.2 before 3.2.12, and 4.0 before 4.0.2. Passing certain inputs to multipart forms could result in an infinite loop when parsing files."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-3",
+        "cve": "CVE-2021-45452",
+        "severity": "N/A",
+        "published": "2022-01-05",
+        "description": "Storage.save in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1 allows directory traversal if crafted filenames are directly passed to it."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2026-1297",
+        "cve": "CVE-2024-45231",
+        "severity": "CVSS:3.1",
+        "published": "2026-07-07",
+        "description": "Django allows enumeration of user e-mail addresses"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "flask",
+        "vulnerability_id": "GHSA-562c-5r94-xh97",
+        "cve": "CVE-2018-1000656",
+        "severity": "CVSS:3.1",
+        "published": "2018-08-23",
+        "description": "Flask is vulnerable to Denial of Service via incorrect encoding of JSON data"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "flask",
+        "vulnerability_id": "GHSA-5wv5-4vpf-pj6m",
+        "cve": "CVE-2019-1010083",
+        "severity": "CVSS:3.1",
+        "published": "2019-07-19",
+        "description": "Pallets Project Flask is vulnerable to Denial of Service via Unexpected memory usage"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "flask",
+        "vulnerability_id": "GHSA-68rp-wp8r-4726",
+        "cve": "CVE-2026-27205",
         "severity": "CVSS:4.0",
-        "published": "2025-03-05",
-        "description": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method"
+        "published": "2026-02-19",
+        "description": "Flask session does not add `Vary: Cookie` header when accessed in some ways"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-h5c8-rqwp-cp95",
-        "cve": "CVE-2024-22195",
+        "package": "flask",
+        "vulnerability_id": "GHSA-m2qf-hxjv-5gpq",
+        "cve": "CVE-2023-30861",
         "severity": "CVSS:3.1",
-        "published": "2024-01-11",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
+        "published": "2023-05-01",
+        "description": "Flask vulnerable to possible disclosure of permanent session cookie due to missing Vary: Cookie header"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-h75v-3vvj-5mfj",
-        "cve": "CVE-2024-34064",
+        "package": "flask",
+        "vulnerability_id": "PYSEC-2018-66",
+        "cve": "CVE-2018-1000656",
+        "severity": "N/A",
+        "published": "2018-08-20",
+        "description": "The Pallets Project flask version Before 0.12.3 contains a CWE-20: Improper Input Validation vulnerability in flask that can result in Large amount of memory usage possibly leading to denial of service. This attack appear to be exploitable via Attacker provides JSON data in incorrect encoding. This vulnerability appears to have been fixed in 0.12.3. NOTE: this may overlap CVE-2019-1010083."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "flask",
+        "vulnerability_id": "PYSEC-2019-179",
+        "cve": "CVE-2019-1010083",
+        "severity": "N/A",
+        "published": "2019-07-17",
+        "description": "The Pallets Project Flask before 1.0 is affected by: unexpected memory usage. The impact is: denial of service. The attack vector is: crafted encoded JSON data. The fixed version is: 1. NOTE: this may overlap CVE-2018-1000656."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "flask",
+        "vulnerability_id": "PYSEC-2023-62",
+        "cve": "CVE-2023-30861",
+        "severity": "N/A",
+        "published": "2023-05-02",
+        "description": "Flask is a lightweight WSGI web application framework. When all of the following conditions are met, a response containing data intended for one client may be cached and subsequently sent by the proxy to other clients. If the proxy also caches `Set-Cookie` headers, it may send one client's `session` cookie to other clients. The severity depends on the application's use of the session and the proxy's behavior regarding cookies. The risk depends on all these conditions being met.\n\n1. The application must be hosted behind a caching proxy that does not strip cookies or ignore responses with cookies.\n2. The application sets `session.permanent = True`\n3. The application does not access or modify the session at any point during a request.\n4. `SESSION_REFRESH_EACH_REQUEST` enabled (the default).\n5. The application does not set a `Cache-Control` header to indicate that a page is private or should not be cached.\n\nThis happens because vulnerable versions of Flask only set the `Vary: Cookie` header when the session is accessed or modified, not when it is refreshed (re-sent to update the expiration) without being accessed or modified. This issue has been fixed in versions 2.3.2 and 2.2.5."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "flask",
+        "vulnerability_id": "PYSEC-2026-2151",
+        "cve": "CVE-2026-27205",
         "severity": "CVSS:3.1",
-        "published": "2024-05-06",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
+        "published": "2026-02-21",
+        "description": "Flask is a web server gateway interface (WSGI) web application framework. In versions 3.1.2 and below, when the session object is accessed, Flask should set the Vary: Cookie header., resulting in a Use of Cache Containing Sensitive Information vulnerability. The logic instructs caches not to cache the response, as it may contain information specific to a logged in user. This is handled in most cases, but some forms of access such as the Python in operator were overlooked. The severity and risk depend on the application being hosted behind a caching proxy that doesn't ignore responses with cookies, not setting a Cache-Control header to mark pages as private or non-cacheable, and accessing the session in a way that only touches keys without reading values or mutating the session. The issue has been fixed in version 3.1.3."
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-q2x7-8rv6-6q7h",
-        "cve": "CVE-2024-56326",
+        "package": "PyYAML",
+        "vulnerability_id": "GHSA-3pqx-4fqf-j49f",
+        "cve": "CVE-2019-20477",
         "severity": "CVSS:3.1",
-        "published": "2024-12-23",
-        "description": "Jinja has a sandbox breakout through indirect reference to format method"
+        "published": "2021-04-20",
+        "description": "Deserialization of Untrusted Data in PyYAML"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1471",
-        "cve": "CVE-2025-27516",
-        "severity": "CVSS:4.0",
-        "published": "2026-07-07",
-        "description": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method"
-    },
-    {
-        "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1473",
-        "cve": "CVE-2024-22195",
+        "package": "PyYAML",
+        "vulnerability_id": "GHSA-6757-jp84-gxfx",
+        "cve": "CVE-2020-1747",
         "severity": "CVSS:3.1",
-        "published": "2026-07-07",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
+        "published": "2021-04-20",
+        "description": "Improper Input Validation in PyYAML"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1474",
-        "cve": "CVE-2024-34064",
-        "severity": "CVSS:3.1",
-        "published": "2026-07-07",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
-    },
-    {
-        "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1475",
-        "cve": "CVE-2024-56326",
-        "severity": "CVSS:3.1",
-        "published": "2026-07-07",
-        "description": "Jinja has a sandbox breakout through indirect reference to format method"
-    },
-    {
-        "ecosystem": "PyPI",
-        "package": "pyyaml",
+        "package": "PyYAML",
         "vulnerability_id": "GHSA-8q59-q68h-6hv4",
         "cve": "CVE-2020-14343",
         "severity": "CVSS:3.1",
@@ -154,12 +649,102 @@
     },
     {
         "ecosystem": "PyPI",
-        "package": "pyyaml",
+        "package": "PyYAML",
+        "vulnerability_id": "PYSEC-2020-176",
+        "cve": "CVE-2019-20477",
+        "severity": "N/A",
+        "published": "2020-02-19",
+        "description": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "PyYAML",
+        "vulnerability_id": "PYSEC-2020-96",
+        "cve": "CVE-2020-1747",
+        "severity": "N/A",
+        "published": "2020-03-24",
+        "description": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "PyYAML",
         "vulnerability_id": "PYSEC-2021-142",
         "cve": "CVE-2020-14343",
         "severity": "N/A",
         "published": "2021-02-09",
         "description": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "GHSA-5545-2q6w-2gh6",
+        "cve": "CVE-2021-41495",
+        "severity": "CVSS:3.1",
+        "published": "2022-02-08",
+        "description": "NumPy NULL Pointer Dereference"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "GHSA-6p56-wp2h-9hxr",
+        "cve": "CVE-2021-33430",
+        "severity": "CVSS:3.1",
+        "published": "2022-01-07",
+        "description": "NumPy Buffer Overflow (Disputed)"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "GHSA-9fq2-x9r6-wfmf",
+        "cve": "CVE-2019-6446",
+        "severity": "CVSS:3.0",
+        "published": "2022-05-24",
+        "description": "Numpy Deserialization of Untrusted Data"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "GHSA-f7c7-j99h-c22f",
+        "cve": "CVE-2021-41496",
+        "severity": "CVSS:3.1",
+        "published": "2022-02-08",
+        "description": "Buffer Copy without Checking Size of Input in NumPy"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "GHSA-fpfv-jqm9-f5jm",
+        "cve": "CVE-2021-34141",
+        "severity": "CVSS:3.1",
+        "published": "2021-12-18",
+        "description": "Incorrect Comparison in NumPy"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "PYSEC-2019-108",
+        "cve": "CVE-2019-6446",
+        "severity": "N/A",
+        "published": "2019-01-16",
+        "description": "** DISPUTED **   An issue was discovered in NumPy 1.16.0 and earlier. It uses the pickle Python module unsafely, which allows remote attackers to execute arbitrary code via a crafted serialized object, as demonstrated by a numpy.load call. NOTE: third parties dispute this issue because it is  a behavior that might have legitimate applications in (for example)  loading serialized Python object arrays from trusted and authenticated  sources."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "PYSEC-2021-856",
+        "cve": "CVE-2021-41495",
+        "severity": "N/A",
+        "published": "2021-12-17",
+        "description": "Null Pointer Dereference vulnerability exists in numpy.sort in NumPy &lt and 1.19 in the PyArray_DescrNew function due to missing return-value validation, which allows attackers to conduct DoS attacks by repetitively creating sort arrays."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "numpy",
+        "vulnerability_id": "PYSEC-2021-857",
+        "cve": "CVE-2021-41496",
+        "severity": "N/A",
+        "published": "2021-12-17",
+        "description": "Buffer overflow in the array_from_pyobj function of fortranobject.c in NumPy < 1.19, which allows attackers to conduct a Denial of Service attacks by carefully constructing an array with negative values."
     },
     {
         "ecosystem": "PyPI",
@@ -200,6 +785,24 @@
     {
         "ecosystem": "PyPI",
         "package": "requests",
+        "vulnerability_id": "GHSA-x84v-xcm2-53pg",
+        "cve": "CVE-2018-18074",
+        "severity": "CVSS:3.1",
+        "published": "2018-10-29",
+        "description": "Insufficiently Protected Credentials in Requests"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "requests",
+        "vulnerability_id": "PYSEC-2018-28",
+        "cve": "CVE-2018-18074",
+        "severity": "N/A",
+        "published": "2018-10-09",
+        "description": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "requests",
         "vulnerability_id": "PYSEC-2023-74",
         "cve": "CVE-2023-32681",
         "severity": "N/A",
@@ -235,79 +838,484 @@
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-cpwx-vrp4-4pq7",
-        "cve": "CVE-2025-27516",
-        "severity": "CVSS:4.0",
-        "published": "2025-03-05",
-        "description": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method"
-    },
-    {
-        "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-h5c8-rqwp-cp95",
-        "cve": "CVE-2024-22195",
+        "package": "django",
+        "vulnerability_id": "GHSA-2gwj-7jmv-h26r",
+        "cve": "CVE-2022-28346",
         "severity": "CVSS:3.1",
-        "published": "2024-01-11",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
+        "published": "2022-04-13",
+        "description": "SQL Injection in Django"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-h75v-3vvj-5mfj",
-        "cve": "CVE-2024-34064",
+        "package": "django",
+        "vulnerability_id": "GHSA-2m34-jcjv-45xf",
+        "cve": "CVE-2020-13596",
         "severity": "CVSS:3.1",
-        "published": "2024-05-06",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
+        "published": "2020-06-05",
+        "description": "XSS in Django"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "GHSA-q2x7-8rv6-6q7h",
-        "cve": "CVE-2024-56326",
+        "package": "django",
+        "vulnerability_id": "GHSA-3gh2-xw74-jmcw",
+        "cve": "CVE-2020-9402",
         "severity": "CVSS:3.1",
-        "published": "2024-12-23",
-        "description": "Jinja has a sandbox breakout through indirect reference to format method"
+        "published": "2020-06-05",
+        "description": "SQL injection in Django"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1471",
-        "cve": "CVE-2025-27516",
-        "severity": "CVSS:4.0",
-        "published": "2026-07-07",
-        "description": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method"
-    },
-    {
-        "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1473",
-        "cve": "CVE-2024-22195",
+        "package": "django",
+        "vulnerability_id": "GHSA-3h9f-r86x-qvjx",
+        "cve": "CVE-2026-48588",
         "severity": "CVSS:3.1",
         "published": "2026-07-07",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
+        "description": "Django: cache middleware may expose private responses when unrelated request cookies are present"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1474",
-        "cve": "CVE-2024-34064",
+        "package": "django",
+        "vulnerability_id": "GHSA-53qw-q765-4fww",
+        "cve": "CVE-2021-45115",
+        "severity": "CVSS:3.1",
+        "published": "2022-01-12",
+        "description": "Denial-of-service in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-68w8-qjq3-2gfm",
+        "cve": "CVE-2021-33203",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-10",
+        "description": "Path Traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-6cw3-g6wv-c2xv",
+        "cve": "CVE-2022-23833",
+        "severity": "CVSS:3.1",
+        "published": "2022-02-04",
+        "description": "Infinite Loop in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-6w2r-r2m5-xq5w",
+        "cve": "CVE-2025-57833",
+        "severity": "CVSS:3.1",
+        "published": "2025-09-08",
+        "description": "Django is subject to SQL injection through its column aliases"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-7xr5-9hcq-chf9",
+        "cve": "CVE-2025-48432",
+        "severity": "CVSS:3.1",
+        "published": "2025-06-05",
+        "description": "Django Improper Output Neutralization for Logs vulnerability"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-8c5j-9r9f-c6w8",
+        "cve": "CVE-2021-45116",
+        "severity": "CVSS:3.1",
+        "published": "2022-01-12",
+        "description": "Information disclosure in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-8cjm-8mp7-r2xf",
+        "cve": "CVE-2026-8404",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-03",
+        "description": "Django: UpdateCacheMiddleware may disclose cached responses due to case-sensitive Cache-Control handling"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-8qcx-xf44-272x",
+        "cve": "CVE-2026-53878",
         "severity": "CVSS:3.1",
         "published": "2026-07-07",
-        "description": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter"
+        "description": "Django: DomainNameValidator permits newline characters that may enable HTTP header injection"
     },
     {
         "ecosystem": "PyPI",
-        "package": "jinja2",
-        "vulnerability_id": "PYSEC-2026-1475",
-        "cve": "CVE-2024-56326",
+        "package": "django",
+        "vulnerability_id": "GHSA-8x94-hmjh-97hq",
+        "cve": "CVE-2022-36359",
+        "severity": "CVSS:3.1",
+        "published": "2022-08-11",
+        "description": "Django vulnerable to Reflected File Download attack"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-923m-gv2p-w5qp",
+        "cve": "CVE-2026-48587",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-03",
+        "description": "Django: has_vary_header may expose cached responses when Vary values contain whitespace"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-95rw-fx8r-36v6",
+        "cve": "CVE-2022-22818",
+        "severity": "CVSS:3.1",
+        "published": "2022-02-04",
+        "description": "Cross-site Scripting in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-crhf-3pfg-w68w",
+        "cve": "CVE-2026-53877",
         "severity": "CVSS:3.1",
         "published": "2026-07-07",
-        "description": "Jinja has a sandbox breakout through indirect reference to format method"
+        "description": " Django: GDALRaster may over-read heap memory when constructed from bytes"
     },
     {
         "ecosystem": "PyPI",
-        "package": "pyyaml",
+        "package": "django",
+        "vulnerability_id": "GHSA-fr28-569j-53c4",
+        "cve": "CVE-2020-24584",
+        "severity": "CVSS:3.1",
+        "published": "2021-03-18",
+        "description": "Django Incorrect Default Permissions"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-frmv-pr5f-9mcr",
+        "cve": "CVE-2025-64459",
+        "severity": "CVSS:3.1",
+        "published": "2025-11-05",
+        "description": "Django vulnerable to SQL injection via _connector keyword argument in QuerySet and Q objects."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-fvgf-6h6h-3322",
+        "cve": "CVE-2021-3281",
+        "severity": "CVSS:3.1",
+        "published": "2021-03-18",
+        "description": "Django Directory Traversal via archive.extract"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-h7pc-vwp9-298g",
+        "cve": "CVE-2026-6873",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-03",
+        "description": "Django: signed cookies are vulnerable to salt namespace collisions"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-jrh2-hc4r-7jwx",
+        "cve": "CVE-2021-45452",
+        "severity": "CVSS:3.1",
+        "published": "2022-01-12",
+        "description": "Directory-traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-m6gj-h9gm-gw44",
+        "cve": "CVE-2020-24583",
+        "severity": "CVSS:3.1",
+        "published": "2021-03-18",
+        "description": "Django Incorrect Default Permissions"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-p99v-5w3c-jqq9",
+        "cve": "CVE-2021-33571",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-10",
+        "description": "Django Access Control Bypass possibly leading to SSRF, RFI, and LFI attacks "
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-qm57-vhq3-3fwf",
+        "cve": "CVE-2021-32052",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-09",
+        "description": "Header injection possible in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-qw25-v68c-qjf3",
+        "cve": "CVE-2025-64458",
+        "severity": "CVSS:3.1",
+        "published": "2025-11-05",
+        "description": "Django has a denial-of-service vulnerability in HttpResponseRedirect and HttpResponsePermanentRedirect on Windows"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-rrqc-c2jx-6jgv",
+        "cve": "CVE-2024-45231",
+        "severity": "CVSS:3.1",
+        "published": "2024-10-08",
+        "description": "Django allows enumeration of user e-mail addresses"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-rxjp-mfm9-w4wr",
+        "cve": "CVE-2021-31542",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-04",
+        "description": "Path Traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-v6rh-hp5x-86rv",
+        "cve": "CVE-2021-44420",
+        "severity": "CVSS:3.1",
+        "published": "2021-12-09",
+        "description": "Potential bypass of an upstream access control based on URL paths in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-w24h-v9qh-8gxj",
+        "cve": "CVE-2022-28347",
+        "severity": "CVSS:3.1",
+        "published": "2022-04-13",
+        "description": "SQL Injection in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-wpjr-j57x-wxfw",
+        "cve": "CVE-2020-13254",
+        "severity": "CVSS:3.1",
+        "published": "2020-06-05",
+        "description": "Data leakage via cache key collision in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "GHSA-xgxc-v2qg-chmh",
+        "cve": "CVE-2021-28658",
+        "severity": "CVSS:3.1",
+        "published": "2021-04-08",
+        "description": "Directory Traversal in Django"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-31",
+        "cve": "CVE-2020-13254",
+        "severity": "N/A",
+        "published": "2020-06-03",
+        "description": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. In cases where a memcached backend does not perform key validation, passing malformed cache keys could result in a key collision, and potential data leakage."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-32",
+        "cve": "CVE-2020-13596",
+        "severity": "N/A",
+        "published": "2020-06-03",
+        "description": "An issue was discovered in Django 2.2 before 2.2.13 and 3.0 before 3.0.7. Query parameters generated by the Django admin ForeignKeyRawIdWidget were not properly URL encoded, leading to a possibility of an XSS attack."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-33",
+        "cve": "CVE-2020-24583",
+        "severity": "N/A",
+        "published": "2020-09-01",
+        "description": "An issue was discovered in Django 2.2 before 2.2.16, 3.0 before 3.0.10, and 3.1 before 3.1.1 (when Python 3.7+ is used). FILE_UPLOAD_DIRECTORY_PERMISSIONS mode was not applied to intermediate-level directories created in the process of uploading files. It was also not applied to intermediate-level collected static directories when using the collectstatic management command."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-34",
+        "cve": "CVE-2020-24584",
+        "severity": "N/A",
+        "published": "2020-09-01",
+        "description": "An issue was discovered in Django 2.2 before 2.2.16, 3.0 before 3.0.10, and 3.1 before 3.1.1 (when Python 3.7+ is used). The intermediate-level directories of the filesystem cache had the system's standard umask rather than 0o077."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2020-36",
+        "cve": "CVE-2020-9402",
+        "severity": "N/A",
+        "published": "2020-03-05",
+        "description": "Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4 allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle. By passing a suitably crafted tolerance to GIS functions and aggregates on Oracle, it was possible to break escaping and inject malicious SQL."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-439",
+        "cve": "CVE-2021-44420",
+        "severity": "N/A",
+        "published": "2021-12-08",
+        "description": "In Django 2.2 before 2.2.25, 3.1 before 3.1.14, and 3.2 before 3.2.10, HTTP requests for URLs with trailing newlines could bypass upstream access control based on URL paths."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-6",
+        "cve": "CVE-2021-28658",
+        "severity": "N/A",
+        "published": "2021-04-06",
+        "description": "In Django 2.2 before 2.2.20, 3.0 before 3.0.14, and 3.1 before 3.1.8, MultiPartParser allowed directory traversal via uploaded files with suitably crafted file names. Built-in upload handlers were not affected by this vulnerability."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-7",
+        "cve": "CVE-2021-31542",
+        "severity": "N/A",
+        "published": "2021-05-05",
+        "description": "In Django 2.2 before 2.2.21, 3.1 before 3.1.9, and 3.2 before 3.2.1, MultiPartParser, UploadedFile, and FieldFile allowed directory traversal via uploaded files with suitably crafted file names."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-8",
+        "cve": "CVE-2021-32052",
+        "severity": "N/A",
+        "published": "2021-05-06",
+        "description": "In Django 2.2 before 2.2.22, 3.1 before 3.1.10, and 3.2 before 3.2.2 (with Python 3.9.5+), URLValidator does not prohibit newlines and tabs (unless the URLField form field is used). If an application uses values with newlines in an HTTP response, header injection can occur. Django itself is unaffected because HttpResponse prohibits newlines in HTTP headers."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-9",
+        "cve": "CVE-2021-3281",
+        "severity": "N/A",
+        "published": "2021-02-02",
+        "description": "In Django 2.2 before 2.2.18, 3.0 before 3.0.12, and 3.1 before 3.1.6, the django.utils.archive.extract method (used by \"startapp --template\" and \"startproject --template\") allows directory traversal via an archive with absolute paths or relative paths with dot segments."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-98",
+        "cve": "CVE-2021-33203",
+        "severity": "N/A",
+        "published": "2021-06-08",
+        "description": "Django before 2.2.24, 3.x before 3.1.12, and 3.2.x before 3.2.4 has a potential directory traversal via django.contrib.admindocs. Staff members could use the TemplateDetailView view to check the existence of arbitrary files. Additionally, if (and only if) the default admindocs templates have been customized by application developers to also show file contents, then not only the existence but also the file contents would have been exposed. In other words, there is directory traversal outside of the template root directories."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2021-99",
+        "cve": "CVE-2021-33571",
+        "severity": "N/A",
+        "published": "2021-06-08",
+        "description": "In Django 2.2 before 2.2.24, 3.x before 3.1.12, and 3.2 before 3.2.4, URLValidator, validate_ipv4_address, and validate_ipv46_address do not prohibit leading zero characters in octal literals. This may allow a bypass of access control that is based on IP addresses. (validate_ipv4_address and validate_ipv46_address are unaffected with Python 3.9.5+..) ."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-1",
+        "cve": "CVE-2021-45115",
+        "severity": "N/A",
+        "published": "2022-01-05",
+        "description": "An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. UserAttributeSimilarityValidator incurred significant overhead in evaluating a submitted password that was artificially large in relation to the comparison values. In a situation where access to user registration was unrestricted, this provided a potential vector for a denial-of-service attack."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-19",
+        "cve": "CVE-2022-22818",
+        "severity": "N/A",
+        "published": "2022-02-03",
+        "description": "The {% debug %} template tag in Django 2.2 before 2.2.27, 3.2 before 3.2.12, and 4.0 before 4.0.2 does not properly encode the current context. This may lead to XSS."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-190",
+        "cve": "CVE-2022-28346",
+        "severity": "N/A",
+        "published": "2022-04-12",
+        "description": "An issue was discovered in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. QuerySet.annotate(), aggregate(), and extra() methods are subject to SQL injection in column aliases via a crafted dictionary (with dictionary expansion) as the passed **kwargs."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-191",
+        "cve": "CVE-2022-28347",
+        "severity": "N/A",
+        "published": "2022-04-12",
+        "description": "A SQL injection issue was discovered in QuerySet.explain() in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. This occurs by passing a crafted dictionary (with dictionary expansion) as the **options argument, and placing the injection payload in an option name."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-2",
+        "cve": "CVE-2021-45116",
+        "severity": "N/A",
+        "published": "2022-01-05",
+        "description": "An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. Due to leveraging the Django Template Language's variable resolution logic, the dictsort template filter was potentially vulnerable to information disclosure, or an unintended method call, if passed a suitably crafted key."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-20",
+        "cve": "CVE-2022-23833",
+        "severity": "N/A",
+        "published": "2022-02-03",
+        "description": "An issue was discovered in MultiPartParser in Django 2.2 before 2.2.27, 3.2 before 3.2.12, and 4.0 before 4.0.2. Passing certain inputs to multipart forms could result in an infinite loop when parsing files."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2022-3",
+        "cve": "CVE-2021-45452",
+        "severity": "N/A",
+        "published": "2022-01-05",
+        "description": "Storage.save in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1 allows directory traversal if crafted filenames are directly passed to it."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "django",
+        "vulnerability_id": "PYSEC-2026-1297",
+        "cve": "CVE-2024-45231",
+        "severity": "CVSS:3.1",
+        "published": "2026-07-07",
+        "description": "Django allows enumeration of user e-mail addresses"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "PyYAML",
+        "vulnerability_id": "GHSA-3pqx-4fqf-j49f",
+        "cve": "CVE-2019-20477",
+        "severity": "CVSS:3.1",
+        "published": "2021-04-20",
+        "description": "Deserialization of Untrusted Data in PyYAML"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "PyYAML",
+        "vulnerability_id": "GHSA-6757-jp84-gxfx",
+        "cve": "CVE-2020-1747",
+        "severity": "CVSS:3.1",
+        "published": "2021-04-20",
+        "description": "Improper Input Validation in PyYAML"
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "PyYAML",
         "vulnerability_id": "GHSA-8q59-q68h-6hv4",
         "cve": "CVE-2020-14343",
         "severity": "CVSS:3.1",
@@ -316,30 +1324,30 @@
     },
     {
         "ecosystem": "PyPI",
-        "package": "pyyaml",
+        "package": "PyYAML",
+        "vulnerability_id": "PYSEC-2020-176",
+        "cve": "CVE-2019-20477",
+        "severity": "N/A",
+        "published": "2020-02-19",
+        "description": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "PyYAML",
+        "vulnerability_id": "PYSEC-2020-96",
+        "cve": "CVE-2020-1747",
+        "severity": "N/A",
+        "published": "2020-03-24",
+        "description": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor."
+    },
+    {
+        "ecosystem": "PyPI",
+        "package": "PyYAML",
         "vulnerability_id": "PYSEC-2021-142",
         "cve": "CVE-2020-14343",
         "severity": "N/A",
         "published": "2021-02-09",
         "description": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747."
-    },
-    {
-        "ecosystem": "npm",
-        "package": "express",
-        "vulnerability_id": "GHSA-qw6h-vgh9-j6wx",
-        "cve": "CVE-2024-43796",
-        "severity": "CVSS:3.1",
-        "published": "2024-09-10",
-        "description": "express vulnerable to XSS via response.redirect()"
-    },
-    {
-        "ecosystem": "npm",
-        "package": "express",
-        "vulnerability_id": "GHSA-rv95-896h-c2vc",
-        "cve": "CVE-2024-29041",
-        "severity": "CVSS:3.1",
-        "published": "2024-03-25",
-        "description": "Express.js Open Redirect in malformed URLs"
     },
     {
         "ecosystem": "npm",
@@ -394,6 +1402,258 @@
         "severity": "CVSS:3.1",
         "published": "2026-01-21",
         "description": "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-3g43-6gmg-66jw",
+        "cve": "CVE-2026-44495",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-29",
+        "description": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-3p68-rc4w-qgx5",
+        "cve": "CVE-2025-62718",
+        "severity": "CVSS:3.1",
+        "published": "2026-04-09",
+        "description": "Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-43fc-jf86-j433",
+        "cve": "CVE-2026-25639",
+        "severity": "CVSS:3.1",
+        "published": "2026-02-09",
+        "description": "Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-5c9x-8gcm-mpgx",
+        "cve": "CVE-2026-42034",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-62hf-57xw-28j9",
+        "cve": "CVE-2026-42039",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-6chq-wfr3-2hj9",
+        "cve": "CVE-2026-42035",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: Header Injection via Prototype Pollution"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-7q8q-rj6j-mhjq",
+        "cve": "CVE-2026-67319",
+        "severity": "CVSS:4.0",
+        "published": "2026-07-20",
+        "description": "Axios: Nested axios option objects can consume polluted prototype values"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-898c-q2cr-xwhg",
+        "cve": "CVE-2026-44490",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-29",
+        "description": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-cph5-m8f7-6c5x",
+        "cve": "CVE-2021-3749",
+        "severity": "CVSS:3.1",
+        "published": "2021-09-01",
+        "description": "axios Inefficient Regular Expression Complexity vulnerability"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-fvcv-3m26-pcqx",
+        "cve": "CVE-2026-40175",
+        "severity": "CVSS:3.1",
+        "published": "2026-04-10",
+        "description": "Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-hfxv-24rg-xrqf",
+        "cve": "CVE-2026-44496",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-04",
+        "description": "Axios: Regular Expression Denial of Service (ReDoS) via Cookie Name Injection"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-j5f8-grm9-p9fc",
+        "cve": "CVE-2026-44486",
+        "severity": "CVSS:3.1",
+        "published": "2026-06-04",
+        "description": "Axios: Proxy-Authorization header leaks to redirect target when proxy is re-evaluated to direct connection"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-jr5f-v2jv-69x6",
+        "cve": "CVE-2025-27152",
+        "severity": "CVSS:4.0",
+        "published": "2025-03-07",
+        "description": "axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-m7pr-hjqh-92cm",
+        "cve": "CVE-2026-42038",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: no_proxy bypass via IP alias allows SSRF"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-mmx7-hfxf-jppx",
+        "cve": "CVE-2026-67316",
+        "severity": "CVSS:4.0",
+        "published": "2026-07-20",
+        "description": "Axios: Prototype pollution gadgets can alter axios request construction"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-p92q-9vqr-4j8v",
+        "cve": "CVE-2026-44487",
+        "severity": "CVSS:4.0",
+        "published": "2026-06-04",
+        "description": "Axios: Proxy-Authorization Credential Leak to Origin Server Across HTTP-to-HTTPS Redirect in Axios Node.js HTTP Adapter"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-pf86-5x62-jrwf",
+        "cve": "CVE-2026-42033",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-pjwm-pj3p-43mv",
+        "cve": "CVE-2026-44492",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-29",
+        "description": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-pmwg-cvhr-8vh7",
+        "cve": "CVE-2026-42043",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-vf2m-468p-8v99",
+        "cve": "CVE-2026-42036",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: HTTP adapter streamed responses bypass maxContentLength"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-w9j2-pvgh-6h63",
+        "cve": "CVE-2026-42041",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-wf5p-g6vw-rhxx",
+        "cve": "CVE-2023-45857",
+        "severity": "CVSS:3.1",
+        "published": "2023-11-08",
+        "description": "Axios Cross-Site Request Forgery Vulnerability"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-xhjh-pmcv-23jw",
+        "cve": "CVE-2026-42040",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "axios",
+        "vulnerability_id": "GHSA-xx6v-rp6x-q39c",
+        "cve": "CVE-2026-42042",
+        "severity": "CVSS:3.1",
+        "published": "2026-05-05",
+        "description": "Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "minimist",
+        "vulnerability_id": "GHSA-vh95-rmgr-6w4m",
+        "cve": "CVE-2020-7598",
+        "severity": "CVSS:3.1",
+        "published": "2020-04-03",
+        "description": "Prototype Pollution in minimist"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "minimist",
+        "vulnerability_id": "GHSA-xvch-5gv4-984h",
+        "cve": "CVE-2021-44906",
+        "severity": "CVSS:3.1",
+        "published": "2022-03-18",
+        "description": "Prototype Pollution in minimist"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "express",
+        "vulnerability_id": "GHSA-qw6h-vgh9-j6wx",
+        "cve": "CVE-2024-43796",
+        "severity": "CVSS:3.1",
+        "published": "2024-09-10",
+        "description": "express vulnerable to XSS via response.redirect()"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "express",
+        "vulnerability_id": "GHSA-rv95-896h-c2vc",
+        "cve": "CVE-2024-29041",
+        "severity": "CVSS:3.1",
+        "published": "2024-03-25",
+        "description": "Express.js Open Redirect in malformed URLs"
     },
     {
         "ecosystem": "npm",
@@ -684,49 +1944,67 @@
         "description": "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions"
     },
     {
-        "ecosystem": "Go",
-        "package": "github.com/gin-gonic/gin",
-        "vulnerability_id": "GHSA-2c4m-59x9-fr2g",
-        "cve": "CVE-2023-29401",
+        "ecosystem": "npm",
+        "package": "minimist",
+        "vulnerability_id": "GHSA-vh95-rmgr-6w4m",
+        "cve": "CVE-2020-7598",
         "severity": "CVSS:3.1",
-        "published": "2023-05-12",
-        "description": "Gin Web Framework does not properly sanitize filename parameter of Context.FileAttachment function"
+        "published": "2020-04-03",
+        "description": "Prototype Pollution in minimist"
+    },
+    {
+        "ecosystem": "npm",
+        "package": "minimist",
+        "vulnerability_id": "GHSA-xvch-5gv4-984h",
+        "cve": "CVE-2021-44906",
+        "severity": "CVSS:3.1",
+        "published": "2022-03-18",
+        "description": "Prototype Pollution in minimist"
     },
     {
         "ecosystem": "Go",
-        "package": "github.com/gin-gonic/gin",
-        "vulnerability_id": "GHSA-3vp4-m3rf-835h",
-        "cve": "CVE-2023-26125",
+        "package": "github.com/dgrijalva/jwt-go",
+        "vulnerability_id": "GHSA-w73w-5m7g-f7qc",
+        "cve": "CVE-2020-26160",
         "severity": "CVSS:3.1",
-        "published": "2023-05-04",
-        "description": "Improper input validation in github.com/gin-gonic/gin"
+        "published": "2021-05-18",
+        "description": "Authorization bypass in github.com/dgrijalva/jwt-go"
     },
     {
         "ecosystem": "Go",
-        "package": "github.com/gin-gonic/gin",
-        "vulnerability_id": "GHSA-h395-qcrw-5vmq",
-        "cve": "CVE-2020-28483",
-        "severity": "CVSS:3.1",
-        "published": "2021-06-23",
-        "description": "Inconsistent Interpretation of HTTP Requests in github.com/gin-gonic/gin"
-    },
-    {
-        "ecosystem": "Go",
-        "package": "github.com/gin-gonic/gin",
-        "vulnerability_id": "GO-2021-0052",
-        "cve": "CVE-2020-28483",
+        "package": "github.com/dgrijalva/jwt-go",
+        "vulnerability_id": "GO-2020-0017",
+        "cve": "CVE-2020-26160",
         "severity": "N/A",
         "published": "2021-04-14",
-        "description": "Inconsistent interpretation of HTTP Requests in github.com/gin-gonic/gin"
+        "description": "Authorization bypass in github.com/dgrijalva/jwt-go"
     },
     {
         "ecosystem": "Go",
-        "package": "github.com/gin-gonic/gin",
-        "vulnerability_id": "GO-2023-1737",
-        "cve": "CVE-2023-29401",
+        "package": "github.com/gorilla/websocket",
+        "vulnerability_id": "GHSA-3xh2-74w9-5vxm",
+        "cve": "CVE-2020-27813",
+        "severity": "CVSS:3.1",
+        "published": "2021-05-18",
+        "description": "Integer overflow in github.com/gorilla/websocket"
+    },
+    {
+        "ecosystem": "Go",
+        "package": "github.com/gorilla/websocket",
+        "vulnerability_id": "GO-2020-0019",
+        "cve": "CVE-2020-27813",
         "severity": "N/A",
-        "published": "2023-05-11",
-        "description": "Improper handling of filenames in Content-Disposition HTTP header in github.com/gin-gonic/gin"
+        "published": "2021-04-14",
+        "description": "Integer overflow in github.com/gorilla/websocket"
+    },
+    {
+        "ecosystem": "Go",
+        "package": "golang.org/x/crypto",
+        "vulnerability_id": "GHSA-3vm4-22fp-5rfm",
+        "cve": "CVE-2020-29652",
+        "severity": "CVSS:3.1",
+        "published": "2022-05-24",
+        "description": "golang.org/x/crypto/ssh NULL Pointer Dereference vulnerability"
     },
     {
         "ecosystem": "Go",
@@ -907,6 +2185,15 @@
         "severity": "CVSS:3.1",
         "published": "2026-06-25",
         "description": "golang.org/x/crypto: Invoking VerifiedPublicKeyCallback permissions skip enforcement"
+    },
+    {
+        "ecosystem": "Go",
+        "package": "golang.org/x/crypto",
+        "vulnerability_id": "GO-2021-0227",
+        "cve": "CVE-2020-29652",
+        "severity": "N/A",
+        "published": "2022-02-17",
+        "description": "Panic on crafted authentication request message in golang.org/x/crypto/ssh"
     },
     {
         "ecosystem": "Go",
@@ -1117,6 +2404,294 @@
     },
     {
         "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-3gxf-9r58-2ghg",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `X509NameBuilder::build` returned object is not thread safe"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-6hcf-g6gr-hhcr",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `X509Extension::new` and `X509Extension::new_nid` null pointer dereference"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-8c75-8mhr-p7r9",
+        "cve": "CVE-2026-41678",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-openssl has incorrect bounds assertion in aes key wrap"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-9qwg-crg9-m2vc",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `SubjectAlternativeName` and `ExtendedKeyUsage::other` allow arbitrary file read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-hppc-g8h3-xhp3",
+        "cve": "CVE-2026-41898",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-openssl: Unchecked callback length in PSK/cookie trampolines leaks adjacent memory to peer"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-pqf5-4pqq-29f5",
+        "cve": "CVE-2026-41676",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-openssl: Deriver::derive and PkeyCtxRef::derive can overflow short buffers on OpenSSL 1.1.1"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-q445-7m23-qrmw",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-07-22",
+        "description": "openssl's `MemBio::get_buf` has undefined behavior with empty buffers"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-rpmj-rpgj-qmpm",
+        "cve": "CVE-2025-24898",
+        "severity": "CVSS:4.0",
+        "published": "2025-02-03",
+        "description": "rust-openssl ssl::select_next_proto use after free"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xcf7-rvmh-g6q4",
+        "cve": "CVE-2023-53159",
+        "severity": "CVSS:3.1",
+        "published": "2023-06-21",
+        "description": "`openssl` `X509VerifyParamRef::set_host` buffer over-read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xmgf-hq76-4vx2",
+        "cve": "CVE-2026-41677",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-opennssl has an Out-of-bounds read in PEM password callback when returning an oversized length"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xp3w-r5p5-63rr",
+        "cve": "CVE-2026-42327",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-05",
+        "description": "rust-openssl has undefined behavior in X509Ref::ocsp_responders for certificates with non-UTF-8 OCSP URLs"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xphf-cx8h-7q9g",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-11-28",
+        "description": "`openssl` `X509StoreRef::objects` is unsound"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xv59-967r-8726",
+        "cve": "CVE-2026-44662",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-07",
+        "description": "rust-openssl vulnerable to heap buffer overflow when encrypting with AES key-wrap-with-padding"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0022",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `X509NameBuilder::build` returned object is not thread safe"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0023",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `SubjectAlternativeName` and `ExtendedKeyUsage::other` allow arbitrary file read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0024",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `X509Extension::new` and `X509Extension::new_nid` null pointer dereference"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0044",
+        "cve": "CVE-2023-53159",
+        "severity": "N/A",
+        "published": "2023-06-20",
+        "description": "`openssl` `X509VerifyParamRef::set_host` buffer over-read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0072",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-11-23",
+        "description": "`openssl` `X509StoreRef::objects` is unsound"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2024-0357",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2024-07-21",
+        "description": "`MemBio::get_buf` has undefined behavior with empty buffers"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2025-0004",
+        "cve": "CVE-2025-24898",
+        "severity": "N/A",
+        "published": "2025-02-02",
+        "description": "ssl::select_next_proto use after free"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "GHSA-3wx7-46ch-7rq2",
+        "cve": "CVE-2022-2097",
+        "severity": "CVSS:3.1",
+        "published": "2022-07-06",
+        "description": "AES OCB fails to encrypt some bytes"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "GHSA-p52g-cm5j-mjv4",
+        "cve": "CVE-2022-4304",
+        "severity": "CVSS:3.1",
+        "published": "2023-02-08",
+        "description": "openssl-src subject to Timing Oracle in RSA Decryption"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "GHSA-r7jw-wp68-3xch",
+        "cve": "CVE-2023-0215",
+        "severity": "CVSS:3.1",
+        "published": "2023-02-08",
+        "description": "openssl-src vulnerable to Use-after-free following `BIO_new_NDEF`"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "GHSA-v5w6-wcm8-jm4q",
+        "cve": "CVE-2022-4450",
+        "severity": "CVSS:3.1",
+        "published": "2023-02-08",
+        "description": "openssl-src contains Double free after calling `PEM_read_bio_ex`"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "GHSA-x3mh-jvjw-3xwx",
+        "cve": "CVE-2022-0778",
+        "severity": "CVSS:3.1",
+        "published": "2022-03-16",
+        "description": "openssl-src's infinite loop in `BN_mod_sqrt()` reachable when parsing certificates"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "GHSA-x4qr-2fvf-3mr5",
+        "cve": "CVE-2023-0286",
+        "severity": "CVSS:3.1",
+        "published": "2023-02-08",
+        "description": "Vulnerable OpenSSL included in cryptography wheels"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "RUSTSEC-2022-0014",
+        "cve": "CVE-2022-0778",
+        "severity": "N/A",
+        "published": "2022-03-15",
+        "description": "Infinite loop in `BN_mod_sqrt()` reachable when parsing certificates"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "RUSTSEC-2022-0032",
+        "cve": "CVE-2022-2097",
+        "severity": "N/A",
+        "published": "2022-07-05",
+        "description": "AES OCB fails to encrypt some bytes"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "RUSTSEC-2023-0006",
+        "cve": "CVE-2023-0286",
+        "severity": "N/A",
+        "published": "2023-02-07",
+        "description": "X.400 address type confusion in X.509 `GeneralName`"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "RUSTSEC-2023-0007",
+        "cve": "CVE-2022-4304",
+        "severity": "N/A",
+        "published": "2023-02-07",
+        "description": "Timing Oracle in RSA Decryption"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "RUSTSEC-2023-0009",
+        "cve": "CVE-2023-0215",
+        "severity": "N/A",
+        "published": "2023-02-07",
+        "description": "Use-after-free following `BIO_new_NDEF`"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl-src",
+        "vulnerability_id": "RUSTSEC-2023-0010",
+        "cve": "CVE-2022-4450",
+        "severity": "N/A",
+        "published": "2023-02-07",
+        "description": "Double free after calling `PEM_read_bio_ex`"
+    },
+    {
+        "ecosystem": "crates.io",
         "package": "time",
         "vulnerability_id": "GHSA-wcg3-cvx6-7396",
         "cve": "CVE-2020-26235",
@@ -1135,974 +2710,587 @@
     },
     {
         "ecosystem": "crates.io",
-        "package": "tokio",
-        "vulnerability_id": "GHSA-4q83-7cq4-p6wg",
+        "package": "time",
+        "vulnerability_id": "GHSA-wcg3-cvx6-7396",
+        "cve": "CVE-2020-26235",
+        "severity": "CVSS:3.1",
+        "published": "2021-08-25",
+        "description": "Segmentation fault in time"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "time",
+        "vulnerability_id": "RUSTSEC-2020-0071",
+        "cve": "CVE-2020-26235",
+        "severity": "CVSS:3.1",
+        "published": "2020-11-18",
+        "description": "Potential segfault in the time crate"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-3gxf-9r58-2ghg",
         "cve": "N/A",
         "severity": "N/A",
-        "published": "2023-02-04",
-        "description": "`tokio::io::ReadHalf<T>::unsplit` is Unsound"
+        "published": "2023-03-24",
+        "description": "`openssl` `X509NameBuilder::build` returned object is not thread safe"
     },
     {
         "ecosystem": "crates.io",
-        "package": "tokio",
-        "vulnerability_id": "GHSA-7rrj-xr53-82p7",
-        "cve": "CVE-2023-22466",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-6hcf-g6gr-hhcr",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `X509Extension::new` and `X509Extension::new_nid` null pointer dereference"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-8c75-8mhr-p7r9",
+        "cve": "CVE-2026-41678",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-openssl has incorrect bounds assertion in aes key wrap"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-9qwg-crg9-m2vc",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `SubjectAlternativeName` and `ExtendedKeyUsage::other` allow arbitrary file read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-hppc-g8h3-xhp3",
+        "cve": "CVE-2026-41898",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-openssl: Unchecked callback length in PSK/cookie trampolines leaks adjacent memory to peer"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-pqf5-4pqq-29f5",
+        "cve": "CVE-2026-41676",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-openssl: Deriver::derive and PkeyCtxRef::derive can overflow short buffers on OpenSSL 1.1.1"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-q445-7m23-qrmw",
+        "cve": "N/A",
         "severity": "CVSS:3.1",
-        "published": "2023-01-06",
-        "description": "Tokio reject_remote_clients configuration may get dropped when creating a Windows named pipe"
+        "published": "2024-07-22",
+        "description": "openssl's `MemBio::get_buf` has undefined behavior with empty buffers"
     },
     {
         "ecosystem": "crates.io",
-        "package": "tokio",
-        "vulnerability_id": "GHSA-rr8g-9fpq-6wmg",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-rpmj-rpgj-qmpm",
+        "cve": "CVE-2025-24898",
+        "severity": "CVSS:4.0",
+        "published": "2025-02-03",
+        "description": "rust-openssl ssl::select_next_proto use after free"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xcf7-rvmh-g6q4",
+        "cve": "CVE-2023-53159",
+        "severity": "CVSS:3.1",
+        "published": "2023-06-21",
+        "description": "`openssl` `X509VerifyParamRef::set_host` buffer over-read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xmgf-hq76-4vx2",
+        "cve": "CVE-2026-41677",
+        "severity": "CVSS:4.0",
+        "published": "2026-04-22",
+        "description": "rust-opennssl has an Out-of-bounds read in PEM password callback when returning an oversized length"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xp3w-r5p5-63rr",
+        "cve": "CVE-2026-42327",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-05",
+        "description": "rust-openssl has undefined behavior in X509Ref::ocsp_responders for certificates with non-UTF-8 OCSP URLs"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xphf-cx8h-7q9g",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-11-28",
+        "description": "`openssl` `X509StoreRef::objects` is unsound"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "GHSA-xv59-967r-8726",
+        "cve": "CVE-2026-44662",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-07",
+        "description": "rust-openssl vulnerable to heap buffer overflow when encrypting with AES key-wrap-with-padding"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0022",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `X509NameBuilder::build` returned object is not thread safe"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0023",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `SubjectAlternativeName` and `ExtendedKeyUsage::other` allow arbitrary file read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0024",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-03-24",
+        "description": "`openssl` `X509Extension::new` and `X509Extension::new_nid` null pointer dereference"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0044",
+        "cve": "CVE-2023-53159",
+        "severity": "N/A",
+        "published": "2023-06-20",
+        "description": "`openssl` `X509VerifyParamRef::set_host` buffer over-read"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2023-0072",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2023-11-23",
+        "description": "`openssl` `X509StoreRef::objects` is unsound"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2024-0357",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2024-07-21",
+        "description": "`MemBio::get_buf` has undefined behavior with empty buffers"
+    },
+    {
+        "ecosystem": "crates.io",
+        "package": "openssl",
+        "vulnerability_id": "RUSTSEC-2025-0004",
+        "cve": "CVE-2025-24898",
+        "severity": "N/A",
+        "published": "2025-02-02",
+        "description": "ssl::select_next_proto use after free"
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2009-4487",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2010-01-13",
+        "description": "nginx 0.7.64 writes data to a log file without sanitizing non-printable characters, which might allow remote attackers to modify a window's title, or possibly execute arbitrary commands or overwrite files, via an HTTP request containing an escape sequence for a terminal emulator."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2013-0337",
+        "cve": "N/A",
+        "severity": "N/A",
+        "published": "2013-10-27",
+        "description": "The default configuration of nginx, possibly 1.3.13 and earlier, uses world-readable permissions for the (1) access.log and (2) error.log files, which allows local users to obtain sensitive information by reading the files."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2019-20372",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2020-01-09",
+        "description": "NGINX before 1.17.7, with certain error_page configurations, allows HTTP request smuggling, as demonstrated by the ability of an attacker to read unauthorized web pages in environments where NGINX is being fronted by a load balancer."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2020-11724",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2020-04-12",
+        "description": "An issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2020-36309",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2021-04-06",
+        "description": "ngx_http_lua_module (aka lua-nginx-module) before 0.10.16 in OpenResty allows unsafe characters in an argument when using the API to mutate a URI, or a request or response header."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2021-23017",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2021-06-01",
+        "description": "A security issue in nginx resolver was identified, which might allow an attacker who is able to forge UDP packets from the DNS server to cause 1-byte memory overwrite, resulting in worker process crash or potential other impact."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2021-3618",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2022-03-23",
+        "description": "ALPACA is an application layer protocol content confusion attack, exploiting TLS servers implementing different protocols but using compatible certificates, such as multi-domain or wildcard certificates. A MiTM attacker having access to victim's traffic at the TCP/IP layer can redirect traffic from one subdomain to another, resulting in a valid TLS session. This breaks the authentication of TLS and cross-protocol attacks may be possible where the behavior of one protocol service may compromise the other at the application layer."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2022-41741",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2022-10-19",
+        "description": "NGINX Open Source before versions 1.23.2 and 1.22.1, NGINX Open Source Subscription before versions R2 P1 and R1 P1, and NGINX Plus before versions R27 P1 and R26 P1 have a vulnerability in the module ngx_http_mp4_module that might allow a local attacker to corrupt NGINX worker memory, resulting in its termination or potential other impact using a specially crafted audio or video file. The issue affects only NGINX products that are built with the ngx_http_mp4_module, when the mp4 directive is used in the configuration file. Further, the attack is possible only if an attacker can trigger processing of a specially crafted audio or video file with the module ngx_http_mp4_module."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2022-41742",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2022-10-19",
+        "description": "NGINX Open Source before versions 1.23.2 and 1.22.1, NGINX Open Source Subscription before versions R2 P1 and R1 P1, and NGINX Plus before versions R27 P1 and R26 P1 have a vulnerability in the module ngx_http_mp4_module that might allow a local attacker to cause a worker process crash, or might result in worker process memory disclosure by using a specially crafted audio or video file. The issue affects only NGINX products that are built with the module ngx_http_mp4_module, when the mp4 directive is used in the configuration file. Further, the attack is possible only if an attacker can trigger processing of a specially crafted audio or video file with the module ngx_http_mp4_module."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2023-44487",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2023-10-10",
+        "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-24989",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-02-14",
+        "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed requests can cause NGINX worker processes to terminate.  Note: The HTTP/3 QUIC module is not enabled by default and is considered experimental. For more information, refer to  Support for QUIC and HTTP/3 https://nginx.org/en/docs/quic.html .    NOTE: Software versions which have reached End of Technical Support (EoTS) are not evaluated"
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-24990",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-02-14",
+        "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed requests can cause NGINX worker processes to terminate.  Note: The HTTP/3 QUIC module is not enabled by default and is considered experimental. For more information, refer to  Support for QUIC and HTTP/3 https://nginx.org/en/docs/quic.html .        Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated"
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-31079",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-05-29",
+        "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate or cause other potential impact. This attack requires that a request be specifically timed during the connection draining process, which the attacker has no visibility and limited influence over."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-32760",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-05-29",
+        "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 encoder instructions can cause NGINX worker processes to terminate or cause or other potential impact."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-33452",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2025-04-22",
+        "description": "An issue in OpenResty lua-nginx-module v.0.10.26 and before allows a remote attacker to conduct HTTP request smuggling via a crafted HEAD request."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-34161",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-05-29",
+        "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module and the network infrastructure supports a Maximum Transmission Unit (MTU) of 4096 or greater without fragmentation, undisclosed QUIC packets can cause NGINX worker processes to leak previously freed memory."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-35200",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-05-29",
+        "description": "When NGINX Plus or NGINX OSS are configured to use the HTTP/3 QUIC module, undisclosed HTTP/3 requests can cause NGINX worker processes to terminate."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2024-7347",
+        "cve": "N/A",
+        "severity": "CVSS:3.1",
+        "published": "2024-08-14",
+        "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module, which might allow an attacker to over-read NGINX worker memory resulting in its termination, using a specially crafted mp4 file. The issue only affects NGINX if it is built with the ngx_http_mp4_module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted mp4 file with the ngx_http_mp4_module.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2025-23419",
         "cve": "N/A",
         "severity": "CVSS:4.0",
-        "published": "2025-04-07",
-        "description": "Tokio broadcast channel calls clone in parallel, but does not require `Sync`"
-    },
-    {
-        "ecosystem": "crates.io",
-        "package": "tokio",
-        "vulnerability_id": "RUSTSEC-2023-0001",
-        "cve": "CVE-2023-22466",
-        "severity": "N/A",
-        "published": "2023-01-04",
-        "description": "reject_remote_clients Configuration corruption"
-    },
-    {
-        "ecosystem": "crates.io",
-        "package": "tokio",
-        "vulnerability_id": "RUSTSEC-2023-0005",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2023-01-11",
-        "description": "`tokio::io::ReadHalf<T>::unsplit` is Unsound"
-    },
-    {
-        "ecosystem": "crates.io",
-        "package": "tokio",
-        "vulnerability_id": "RUSTSEC-2025-0023",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-04-07",
-        "description": "Broadcast channel calls clone in parallel, but does not require `Sync`"
-    },
-    {
-        "ecosystem": "crates.io",
-        "package": "webpki",
-        "vulnerability_id": "GHSA-8qv2-5vq6-g2g7",
-        "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2023-08-25",
-        "description": "webpki: CPU denial of service in certificate path building"
-    },
-    {
-        "ecosystem": "crates.io",
-        "package": "webpki",
-        "vulnerability_id": "RUSTSEC-2023-0052",
-        "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2023-08-22",
-        "description": "webpki: CPU denial of service in certificate path building"
-    },
-    {
-        "ecosystem": "crates.io",
-        "package": "hyper",
-        "vulnerability_id": "GHSA-f67m-9j94-qv9j",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2022-06-16",
-        "description": "Parser creates invalid uninitialized value"
-    },
-    {
-        "ecosystem": "crates.io",
-        "package": "hyper",
-        "vulnerability_id": "RUSTSEC-2022-0022",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2022-05-10",
-        "description": "Parser creates invalid uninitialized value"
+        "published": "2025-02-05",
+        "description": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.    Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2013-0178",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2025-53859",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2025-08-13",
+        "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_mail_smtp_module that might allow an unauthenticated attacker to over-read NGINX SMTP authentication process memory; as a result, the server side may leak arbitrary bytes sent in a request to the authentication server. This issue happens during the NGINX SMTP authentication process and requires the attacker to make preparations against the target system to extract the leaked data. The issue affects NGINX only if (1) it is built with the ngx_mail_smtp_module, (2) the smtp_auth directive is configured with method \"none,\" and (3) the authentication server returns the \"Auth-Wait\" response header.     Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-1642",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-02-04",
+        "description": "A vulnerability exists in NGINX OSS and NGINX Plus when configured to proxy to upstream Transport Layer Security (TLS) servers. An attacker with a man-in-the-middle (MITM) position on the upstream server side—along with conditions beyond the attacker's control—may be able to inject plain text data into the response from an upstream proxied server.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-27651",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-03-24",
+        "description": "When the ngx_mail_auth_http_module module is enabled on NGINX Plus or NGINX Open Source, undisclosed requests can cause worker processes to terminate. This issue may occur when (1) CRAM-MD5 or APOP authentication is enabled, and (2) the authentication server permits retry by returning the Auth-Wait response header. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-27654",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-03-24",
+        "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_dav_module module that might allow an attacker to trigger a buffer overflow to the NGINX worker process; this vulnerability may result in termination of the NGINX worker process or modification of source or destination file names outside the document root. This issue affects NGINX Open Source and NGINX Plus when the configuration file uses DAV module MOVE or COPY methods, prefix location (nonregular expression location configuration), and alias directives. The integrity impact is constrained because the NGINX worker process user has low privileges and does not have access to the entire system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-27784",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-03-24",
+        "description": "The 32-bit implementation of NGINX Open Source has a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to over-read or over-write NGINX worker memory resulting in its termination, using a specially crafted MP4 file. The issue only affects 32-bit NGINX Open Source if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module.    Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-28753",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-03-24",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_mail_smtp_module module due to the improper handling of CRLF sequences in DNS responses. This allows an attacker-controlled DNS server to inject arbitrary headers into SMTP upstream requests, leading to potential request manipulation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-28755",
         "cve": "N/A",
         "severity": "CVSS:3.1",
-        "published": "2019-11-01",
-        "description": "Insecure temporary file vulnerability in Redis before 2.6 related to /tmp/redis-%p.vm."
+        "published": "2026-03-24",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_stream_ssl_module module due to the improper handling of revoked certificates when configured with the ssl_verify_client on and ssl_ocsp on directives, allowing the TLS handshake to succeed even after an OCSP check identifies the certificate as revoked.      Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2013-0180",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-32647",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-03-24",
+        "description": "NGINX Open Source and NGINX Plus have a vulnerability in the ngx_http_mp4_module module, which might allow an attacker to trigger a buffer over-read or over-write to the NGINX worker memory resulting in its termination or possibly code execution, using a specially crafted MP4 file. This issue affects NGINX Open Source and NGINX Plus if it is built with the ngx_http_mp4_module module and the mp4 directive is used in the configuration file. Additionally, the attack is possible only if an attacker can trigger the processing of a specially crafted MP4 file with the ngx_http_mp4_module module.    Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-40460",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-13",
+        "description": "When NGINX Plus or NGINX Open Source are configured to use the HTTP/3 QUIC module, an attacker may be able to spoof their source IP address allowing for bypass of authorization or bypass of rate limiting.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-40701",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-13",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssl_module module when the ssl_verify_client directive is set to \"on\" or \"optional,\" and the ssl_ocsp directive is set to \"on\" or the leaf parameters are configured with a resolver. With this configuration, an unauthenticated attacker can send requests along with conditions beyond its control that may cause a heap-use-after-free error in the NGINX worker process. This vulnerability may result in limited modification of data or the NGINX worker process restarting.     Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-42055",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-06-17",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_proxy_v2_module and ngx_http_grpc_module modules. This vulnerability exists when the proxy_http_version to 2 or grpc_pass directives are used to proxy HTTP/2 traffic, the ignore_invalid_headers directive is set to off, and the large_client_header_buffers directive size is larger than 2 megabytes. A remote, unauthenticated attacker, along with conditions beyond their control, could send large headers while creating an upstream request. This may cause a heap-based buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.    Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-42533",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-07-15",
+        "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and a string expression references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Impact: This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.      Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-42926",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-13",
+        "description": "When NGINX Open Source is configured to proxy HTTP/2 traffic by setting proxy_http_version to 2, and also uses proxy_set_body, an attacker may be able to inject frame headers and payload bytes to the upstream peer.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-42934",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-13",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map and proxy_pass with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.     Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-42945",
+        "cve": "N/A",
+        "severity": "CVSS:4.0",
+        "published": "2026-05-13",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    },
+    {
+        "ecosystem": "Debian",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-42946",
         "cve": "N/A",
         "severity": "CVSS:3.1",
-        "published": "2019-11-01",
-        "description": "Insecure temporary file vulnerability in Redis 2.6 related to /tmp/redis.ds."
+        "published": "2026-05-13",
+        "description": "A vulnerability exists in the ngx_http_scgi_module and ngx_http_uwsgi_module modules that may result in excessive memory allocation or an over-read of data. When scgi_pass or uwsgi_pass is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2013-7458",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-48142",
         "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2016-08-10",
-        "description": "linenoise, as used in Redis before 3.2.3, uses world-readable permissions for .rediscli_history, which allows local users to obtain sensitive information by reading the file."
+        "severity": "CVSS:4.0",
+        "published": "2026-06-17",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When content is served or proxied through a location block with both source_charset utf-8; and a charset directive (for example, charset koi8-r;) configured, remote, unauthenticated attackers can send requests (in conjunction with conditions beyond their control) to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.    Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2015-4335",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-56434",
         "cve": "N/A",
-        "severity": "N/A",
-        "published": "2015-06-09",
-        "description": "Redis before 2.8.21 and 3.x before 3.0.2 allows remote attackers to execute arbitrary Lua bytecode via the eval command."
+        "severity": "CVSS:4.0",
+        "published": "2026-07-15",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ssi_module module. This vulnerability may exist when the Server-Side Includes (SSI), proxy_pass, and proxy_buffering off directives are configured. With this configuration, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to cause a use-after-free in the NGINX worker process. This issue may lead to limited modification of memory or a restart of the NGINX worker process.  Impact: This vulnerability may allow remote attackers to have limited control to modify memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2015-8080",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2016-04-13",
-        "description": "Integer overflow in the getnum function in lua_struct.c in Redis 2.8.x before 2.8.24 and 3.0.x before 3.0.6 allows context-dependent attackers with permission to run Lua code in a Redis session to cause a denial of service (memory corruption and application crash) or possibly bypass intended sandbox restrictions via a large number, which triggers a stack-based buffer overflow."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2016-10517",
-        "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2017-10-24",
-        "description": "networking.c in Redis before 3.2.7 allows \"Cross Protocol Scripting\" because it lacks a check for POST and Host: strings, which are not valid in the Redis protocol (but commonly occur when an attack triggers an HTTP request to the Redis TCP port)."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2016-2121",
-        "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2018-10-31",
-        "description": "A permissions flaw was found in redis, which sets weak permissions on certain files and directories that could potentially contain sensitive information. A local, unprivileged user could possibly use this flaw to access unauthorized system information."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2016-8339",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-60005",
         "cve": "N/A",
         "severity": "CVSS:3.1",
-        "published": "2016-10-28",
-        "description": "A buffer overflow in Redis 3.2.x prior to 3.2.4 causes arbitrary code execution when a crafted command is sent. An out of bounds write vulnerability exists in the handling of the client-output-buffer-limit option during the CONFIG SET command for the Redis data structure store. A crafted CONFIG SET command can lead to an out of bounds write potentially resulting in code execution."
+        "published": "2026-07-15",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.  Impact: This vulnerability may allow remote, unauthenticated attackers to have limited control to disclose memory contents or restart the NGINX worker process. There is no control plane exposure; this is a data plane issue only. Note: The ngx_http_slice_module module is not enabled by default; it's enabled with the --with-http_slice_module configuration parameter.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2017-15047",
+        "package": "nginx",
+        "vulnerability_id": "DEBIAN-CVE-2026-9256",
         "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2017-10-06",
-        "description": "The clusterLoadConfig function in cluster.c in Redis 4.0.2 allows attackers to cause a denial of service (out-of-bounds array index and application crash) or possibly have unspecified other impact by leveraging \"limited access to the machine.\""
+        "severity": "CVSS:4.0",
+        "published": "2026-05-22",
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.    Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2018-11218",
-        "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2018-06-17",
-        "description": "Memory Corruption was discovered in the cmsgpack library in the Lua subsystem in Redis before 3.2.12, 4.x before 4.0.10, and 5.x before 5.0 RC2 because of stack-based buffer overflows."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2018-11219",
-        "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2018-06-17",
-        "description": "An Integer Overflow issue was discovered in the struct library in the Lua subsystem in Redis before 3.2.12, 4.x before 4.0.10, and 5.x before 5.0 RC2, leading to a failure of bounds checking."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2018-12326",
-        "cve": "N/A",
-        "severity": "CVSS:3.0",
-        "published": "2018-06-17",
-        "description": "Buffer overflow in redis-cli of Redis before 4.0.10 and 5.x before 5.0 RC3 allows an attacker to achieve code execution and escalate to higher privileges via a crafted command line. NOTE: It is unclear whether there are any common situations in which redis-cli is used with, for example, a -h (aka hostname) argument from an untrusted source."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2019-10192",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2019-07-11",
-        "description": "A heap-buffer overflow vulnerability was found in the Redis hyperloglog data structure versions 3.x before 3.2.13, 4.x before 4.0.14 and 5.x before 5.0.4. By carefully corrupting a hyperloglog using the SETRANGE command, an attacker could trick Redis interpretation of dense HLL encoding to write up to 3 bytes beyond the end of a heap-allocated buffer."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2019-10193",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2019-07-11",
-        "description": "A stack-buffer overflow vulnerability was found in the Redis hyperloglog data structure versions 3.x before 3.2.13, 4.x before 4.0.14 and 5.x before 5.0.4. By corrupting a hyperloglog using the SETRANGE command, an attacker could cause Redis to perform controlled increments of up to 12 bytes past the end of a stack-allocated buffer."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2020-14147",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2020-06-15",
-        "description": "An integer overflow in the getnum function in lua_struct.c in Redis before 6.0.3 allows context-dependent attackers with permission to run Lua code in a Redis session to cause a denial of service (memory corruption and application crash) or possibly bypass intended sandbox restrictions via a large number, which triggers a stack-based buffer overflow. NOTE: this issue exists because of a CVE-2015-8080 regression."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2020-21468",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-09-20",
-        "description": "A segmentation fault in the redis-server component of Redis 5.0.7 leads to a denial of service (DOS). NOTE: the vendor cannot reproduce this issue in a released version, such as 5.0.7."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-21309",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-02-26",
-        "description": "Redis is an open-source, in-memory database that persists on disk. In affected versions of Redis an integer overflow bug in 32-bit Redis version 4.0 or newer could be exploited to corrupt the heap and potentially result with remote code execution. Redis 4.0 or newer uses a configurable limit for the maximum supported bulk input size. By default, it is 512MB which is a safe value for all platforms. If the limit is significantly increased, receiving a large request from a client may trigger several integer overflow scenarios, which would result with buffer overflow and heap corruption. We believe this could in certain conditions be exploited for remote code execution. By default, authenticated Redis users have access to all configuration parameters and can therefore use the “CONFIG SET proto-max-bulk-len” to change the safe default, making the system vulnerable. **This problem only affects 32-bit Redis (on a 32-bit system, or as a 32-bit executable running on a 64-bit system).** The problem is fixed in version 6.2, and the fix is back ported to 6.0.11 and 5.0.11. Make sure you use one of these versions if you are running 32-bit Redis. An additional workaround to mitigate the problem without patching the redis-server executable is to prevent clients from directly executing `CONFIG SET`: Using Redis 6.0 or newer, ACL configuration can be used to block the command. Using older versions, the `rename-command` configuration directive can be used to rename the command to a random string unknown to users, rendering it inaccessible. Please note that this workaround may have an additional impact on users or operational systems that expect `CONFIG SET` to behave in certain ways."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-29477",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-05-04",
-        "description": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. An integer overflow bug in Redis version 6.0 or newer could be exploited using the `STRALGO LCS` command to corrupt the heap and potentially result with remote code execution. The problem is fixed in version 6.2.3 and 6.0.13. An additional workaround to mitigate the problem without patching the redis-server executable is to use ACL configuration to prevent clients from using the `STRALGO LCS` command."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-29478",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-05-04",
-        "description": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. An integer overflow bug in Redis 6.2 before 6.2.3 could be exploited to corrupt the heap and potentially result with remote code execution. Redis 6.0 and earlier are not directly affected by this issue. The problem is fixed in version 6.2.3. An additional workaround to mitigate the problem without patching the `redis-server` executable is to prevent users from modifying the `set-max-intset-entries` configuration parameter. This can be done using ACL to restrict unprivileged users from using the `CONFIG SET` command."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-31294",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-07-15",
-        "description": "Redis before 6cbea7d allows a replica to cause an assertion failure in a primary server by sending a non-administrative command (specifically, a SET command). NOTE: this was fixed for Redis 6.2.x and 7.x in 2021. Versions before 6.2 were not intended to have safety guarantees related to this."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32625",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-06-02",
-        "description": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. An integer overflow bug in Redis version 6.0 or newer, could be exploited using the STRALGO LCS command to corrupt the heap and potentially result with remote code execution. This is a result of an incomplete fix by CVE-2021-29477. The problem is fixed in version 6.2.4 and 6.0.14. An additional workaround to mitigate the problem without patching the redis-server executable is to use ACL configuration to prevent clients from using the STRALGO LCS command. On 64 bit systems which have the fixes of CVE-2021-29477 (6.2.3 or 6.0.13), it is sufficient to make sure that the proto-max-bulk-len config parameter is smaller than 2GB (default is 512MB)."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32626",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. In affected versions specially crafted Lua scripts executing in Redis can cause the heap-based Lua stack to be overflowed, due to incomplete checks for this condition. This can result with heap corruption and potentially remote code execution. This problem exists in all versions of Redis with Lua scripting support, starting from 2.6. The problem is fixed in versions 6.2.6, 6.0.16 and 5.0.14. For users unable to update an additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to restrict EVAL and EVALSHA commands."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32627",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. In affected versions an integer overflow bug in Redis can be exploited to corrupt the heap and potentially result with remote code execution. The vulnerability involves changing the default proto-max-bulk-len and client-query-buffer-limit configuration parameters to very large values and constructing specially crafted very large stream elements. The problem is fixed in Redis 6.2.6, 6.0.16 and 5.0.14. For users unable to upgrade an additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from modifying the proto-max-bulk-len configuration parameter. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32628",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. An integer overflow bug in the ziplist data structure used by all versions of Redis can be exploited to corrupt the heap and potentially result with remote code execution. The vulnerability involves modifying the default ziplist configuration parameters (hash-max-ziplist-entries, hash-max-ziplist-value, zset-max-ziplist-entries or zset-max-ziplist-value) to a very large value, and then constructing specially crafted commands to create very large ziplists. The problem is fixed in Redis versions 6.2.6, 6.0.16, 5.0.14. An additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from modifying the above configuration parameters. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32672",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. When using the Redis Lua Debugger, users can send malformed requests that cause the debugger’s protocol parser to read data beyond the actual buffer. This issue affects all versions of Redis with Lua debugging support (3.2 or newer). The problem is fixed in versions 6.2.6, 6.0.16 and 5.0.14."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32675",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. When parsing an incoming Redis Standard Protocol (RESP) request, Redis allocates memory according to user-specified values which determine the number of elements (in the multi-bulk header) and size of each element (in the bulk header). An attacker delivering specially crafted requests over multiple connections can cause the server to allocate significant amount of memory. Because the same parsing mechanism is used to handle authentication requests, this vulnerability can also be exploited by unauthenticated users. The problem is fixed in Redis versions 6.2.6, 6.0.16 and 5.0.14. An additional workaround to mitigate this problem without patching the redis-server executable is to block access to prevent unauthenticated users from connecting to Redis. This can be done in different ways: Using network access control tools like firewalls, iptables, security groups, etc. or Enabling TLS and requiring users to authenticate using client side certificates."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32687",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. An integer overflow bug affecting all versions of Redis can be exploited to corrupt the heap and potentially be used to leak arbitrary contents of the heap or trigger remote code execution. The vulnerability involves changing the default set-max-intset-entries configuration parameter to a very large value and constructing specially crafted commands to manipulate sets. The problem is fixed in Redis versions 6.2.6, 6.0.16 and 5.0.14. An additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from modifying the set-max-intset-entries configuration parameter. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32761",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-07-21",
-        "description": "Redis is an in-memory database that persists on disk. A vulnerability involving out-of-bounds read and integer overflow to buffer overflow exists starting with version 2.2 and prior to versions 5.0.13, 6.0.15, and 6.2.5. On 32-bit systems, Redis `*BIT*` command are vulnerable to integer overflow that can potentially be exploited to corrupt the heap, leak arbitrary heap contents or trigger remote code execution. The vulnerability involves changing the default `proto-max-bulk-len` configuration parameter to a very large value and constructing specially crafted commands bit commands. This problem only affects Redis on 32-bit platforms, or compiled as a 32-bit binary. Redis versions 5.0.`3m 6.0.15, and 6.2.5 contain patches for this issue. An additional workaround to mitigate the problem without patching the `redis-server` executable is to prevent users from modifying the `proto-max-bulk-len` configuration parameter. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-32762",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. The redis-cli command line tool and redis-sentinel service may be vulnerable to integer overflow when parsing specially crafted large multi-bulk network replies. This is a result of a vulnerability in the underlying hiredis library which does not perform an overflow check before calling the calloc() heap allocation function. This issue only impacts systems with heap allocators that do not perform their own overflow checks. Most modern systems do and are therefore not likely to be affected. Furthermore, by default redis-sentinel uses the jemalloc allocator which is also not vulnerable. The problem is fixed in Redis versions 6.2.6, 6.0.16 and 5.0.14."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-3470",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-03-31",
-        "description": "A heap overflow issue was found in Redis in versions before 5.0.10, before 6.0.9 and before 6.2.0 when using a heap allocator other than jemalloc or glibc's malloc, leading to potential out of bound write or process crash. Effectively this flaw does not affect the vast majority of users, who use jemalloc or glibc malloc."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2021-41099",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2021-10-04",
-        "description": "Redis is an open source, in-memory database that persists on disk. An integer overflow bug in the underlying string library can be used to corrupt the heap and potentially result with denial of service or remote code execution. The vulnerability involves changing the default proto-max-bulk-len configuration parameter to a very large value and constructing specially crafted network payloads or commands. The problem is fixed in Redis versions 6.2.6, 6.0.16 and 5.0.14. An additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from modifying the proto-max-bulk-len configuration parameter. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-0543",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2022-02-18",
-        "description": "It was discovered, that redis, a persistent key-value database, due to a packaging issue, is prone to a (Debian-specific) Lua sandbox escape, which could result in remote code execution."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-24735",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2022-04-27",
-        "description": "Redis is an in-memory database that persists on disk. By exploiting weaknesses in the Lua script execution environment, an attacker with access to Redis prior to version 7.0.0 or 6.2.7 can inject Lua code that will execute with the (potentially higher) privileges of another Redis user. The Lua script execution environment in Redis provides some measures that prevent a script from creating side effects that persist and can affect the execution of the same, or different script, at a later time. Several weaknesses of these measures have been publicly known for a long time, but they had no security impact as the Redis security model did not endorse the concept of users or privileges. With the introduction of ACLs in Redis 6.0, these weaknesses can be exploited by a less privileged users to inject Lua code that will execute at a later time, when a privileged user executes a Lua script. The problem is fixed in Redis versions 7.0.0 and 6.2.7. An additional workaround to mitigate this problem without patching the redis-server executable, if Lua scripting is not being used, is to block access to `SCRIPT LOAD` and `EVAL` commands using ACL rules."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-24736",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2022-04-27",
-        "description": "Redis is an in-memory database that persists on disk. Prior to versions 6.2.7 and 7.0.0, an attacker attempting to load a specially crafted Lua script can cause NULL pointer dereference which will result with a crash of the redis-server process. The problem is fixed in Redis versions 7.0.0 and 6.2.7. An additional workaround to mitigate this problem without patching the redis-server executable, if Lua scripting is not being used, is to block access to `SCRIPT LOAD` and `EVAL` commands using ACL rules."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-24834",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-07-13",
-        "description": "Redis is an in-memory database that persists on disk. A specially crafted Lua script executing in Redis can trigger a heap overflow in the cjson library, and result with heap corruption and potentially remote code execution. The problem exists in all versions of Redis with Lua scripting support, starting from 2.6, and affects only authenticated and authorized users. The problem is fixed in versions 7.0.12, 6.2.13, and 6.0.20."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-31144",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2022-07-19",
-        "description": "Redis is an in-memory database that persists on disk. A specially crafted `XAUTOCLAIM` command on a stream key in a specific state may result with heap overflow, and potentially remote code execution. This problem affects versions on the 7.x branch prior to 7.0.4. The patch is released in version 7.0.4."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-35951",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2022-09-23",
-        "description": "Redis is an in-memory database that persists on disk. Versions 7.0.0 and above, prior to 7.0.5 are vulnerable to an Integer Overflow. Executing an `XAUTOCLAIM` command on a stream key in a specific state, with a specially crafted `COUNT` argument may cause an integer overflow, a subsequent heap overflow, and potentially lead to remote code execution. This has been patched in Redis version 7.0.5. No known workarounds exist."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-35977",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-01-20",
-        "description": "Redis is an in-memory database that persists on disk. Authenticated users issuing specially crafted `SETRANGE` and `SORT(_RO)` commands can trigger an integer overflow, resulting with Redis attempting to allocate impossible amounts of memory and abort with an out-of-memory (OOM) panic. The problem is fixed in Redis versions 7.0.8, 6.2.9 and 6.0.17. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-36021",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-03-01",
-        "description": "Redis is an in-memory database that persists on disk. Authenticated users can use string matching commands (like `SCAN` or `KEYS`) with a specially crafted pattern to trigger a denial-of-service attack on Redis, causing it to hang and consume 100% CPU time. The problem is fixed in Redis versions 6.0.18, 6.2.11, 7.0.9."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2022-3647",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2022-10-21",
-        "description": "** DISPUTED ** A vulnerability, which was classified as problematic, was found in Redis up to 6.2.7/7.0.5. Affected is the function sigsegvHandler of the file debug.c of the component Crash Report. The manipulation leads to denial of service. The complexity of an attack is rather high. The exploitability is told to be difficult. The real existence of this vulnerability is still doubted at the moment. Upgrading to version 6.2.8 and 7.0.6 is able to address this issue. The patch is identified as 0bf90d944313919eb8e63d3588bf63a367f020a3. It is recommended to apply a patch to fix this issue. VDB-211962 is the identifier assigned to this vulnerability. NOTE: The vendor claims that this is not a DoS because it applies to the crash logging mechanism which is triggered after a crash has occurred."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-22458",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-01-20",
-        "description": "Redis is an in-memory database that persists on disk. Authenticated users can issue a `HRANDFIELD` or `ZRANDMEMBER` command with specially crafted arguments to trigger a denial-of-service by crashing Redis with an assertion failure. This problem affects Redis versions 6.2 or newer up to but not including 6.2.9 as well as versions 7.0 up to but not including 7.0.8. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-25155",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-03-02",
-        "description": "Redis is an in-memory database that persists on disk. Authenticated users issuing specially crafted `SRANDMEMBER`, `ZRANDMEMBER`, and `HRANDFIELD` commands can trigger an integer overflow, resulting in a runtime assertion and termination of the Redis server process. This problem affects all Redis versions. Patches were released in Redis version(s) 6.0.18, 6.2.11 and 7.0.9."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-28425",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-03-20",
-        "description": "Redis is an in-memory database that persists on disk. Starting in version 7.0.8 and prior to version 7.0.10, authenticated users can use the MSETNX command to trigger a runtime assertion and termination of the Redis server process. The problem is fixed in Redis version 7.0.10."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-28856",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-04-18",
-        "description": "Redis is an open source, in-memory database that persists on disk. Authenticated users can use the `HINCRBYFLOAT` command to create an invalid hash field that will crash Redis on access in affected versions. This issue has been addressed in in versions 7.0.11, 6.2.12, and 6.0.19. Users are advised to upgrade. There are no known workarounds for this issue."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-36824",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-07-11",
-        "description": "Redis is an in-memory database that persists on disk. In Redit 7.0 prior to 7.0.12, extracting key names from a command and a list of arguments may, in some cases, trigger a heap overflow and result in reading random heap memory, heap corruption and potentially remote code execution. Several scenarios that may lead to authenticated users executing a specially crafted `COMMAND GETKEYS` or `COMMAND GETKEYSANDFLAGS`and authenticated users who were set with ACL rules that match key names, executing a specially crafted command that refers to a variadic list of key names. The vulnerability is patched in Redis 7.0.12."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-41053",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-09-06",
-        "description": "Redis is an in-memory database that persists on disk. Redis does not correctly identify keys accessed by `SORT_RO` and as a result may grant users executing this command access to keys that are not explicitly authorized by the ACL configuration. The problem exists in Redis 7.0 or newer and has been fixed in Redis 7.0.13 and 7.2.1. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-41056",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2024-01-10",
-        "description": "Redis is an in-memory database that persists on disk. Redis incorrectly handles resizing of memory buffers which can result in integer overflow that leads to heap overflow and potential remote code execution. This issue has been patched in version 7.0.15 and 7.2.4."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2023-45145",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2023-10-18",
-        "description": "Redis is an in-memory database that persists on disk. On startup, Redis begins listening on a Unix socket before adjusting its permissions to the user-provided configuration. If a permissive umask(2) is used, this creates a race condition that enables, during a short period of time, another process to establish an otherwise unauthorized connection. This problem has existed since Redis 2.6.0-RC1. This issue has been addressed in Redis versions 7.2.2, 7.0.14 and 6.2.14. Users are advised to upgrade. For users unable to upgrade, it is possible to work around the problem by disabling Unix sockets, starting Redis with a restrictive umask, or storing the Unix socket file in a protected directory."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2024-31227",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2024-10-07",
-        "description": "Redis is an open source, in-memory database that persists on disk. An authenticated with sufficient privileges may create a malformed ACL selector which, when accessed, triggers a server panic and subsequent denial of service. The problem exists in Redis 7 prior to versions 7.2.6 and 7.4.1. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2024-31228",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2024-10-07",
-        "description": "Redis is an open source, in-memory database that persists on disk. Authenticated users can trigger a denial-of-service by using specially crafted, long string match patterns on supported commands such as `KEYS`, `SCAN`, `PSUBSCRIBE`, `FUNCTION LIST`, `COMMAND LIST` and ACL definitions. Matching of extremely long patterns may result in unbounded recursion, leading to stack overflow and process crash. This problem has been fixed in Redis versions 6.2.16, 7.2.6, and 7.4.1. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2024-31449",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2024-10-07",
-        "description": "Redis is an open source, in-memory database that persists on disk. An authenticated user may use a specially crafted Lua script to trigger a stack buffer overflow in the bit library, which may potentially lead to remote code execution. The problem exists in all versions of Redis with Lua scripting. This problem has been fixed in Redis versions 6.2.16, 7.2.6, and 7.4.1. Users are advised to upgrade. There are no known workarounds for this vulnerability."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2024-46981",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-01-06",
-        "description": "Redis is an open source, in-memory database that persists on disk. An authenticated user may use a specially crafted Lua script to manipulate the garbage collector and potentially lead to remote code execution. The problem is fixed in 7.4.2, 7.2.7, and 6.2.17. An additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to restrict EVAL and EVALSHA commands."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2024-51741",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-01-06",
-        "description": "Redis is an open source, in-memory database that persists on disk. An authenticated with sufficient privileges may create a malformed ACL selector which, when accessed, triggers a server panic and subsequent denial of service. The problem is fixed in Redis 7.2.7 and 7.4.2."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-21605",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-04-23",
-        "description": "Redis is an open source, in-memory database that persists on disk. In versions starting at 2.6 and prior to 7.4.3, An unauthenticated client can cause unlimited growth of output buffers, until the server runs out of memory or is killed. By default, the Redis configuration does not limit the output buffer of normal clients (see client-output-buffer-limit). Therefore, the output buffer can grow unlimitedly over time. As a result, the service is exhausted and the memory is unavailable. When password authentication is enabled on the Redis server, but no password is provided, the client can still cause the output buffer to grow from \"NOAUTH\" responses until the system will run out of memory. This issue has been patched in version 7.4.3. An additional workaround to mitigate this problem without patching the redis-server executable is to block access to prevent unauthenticated users from connecting to Redis. This can be done in different ways. Either using network access control tools like firewalls, iptables, security groups, etc, or enabling TLS and requiring users to authenticate using client side certificates."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-27151",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-05-29",
-        "description": "Redis is an open source, in-memory database that persists on disk. In versions starting from 7.0.0 to before 8.0.2, a stack-based buffer overflow exists in redis-check-aof due to the use of memcpy with strlen(filepath) when copying a user-supplied file path into a fixed-size stack buffer. This allows an attacker to overflow the stack and potentially achieve code execution. This issue has been patched in version 8.0.2."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-32023",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-07-07",
-        "description": "Redis is an open source, in-memory database that persists on disk. From 2.8 to before 8.0.3, 7.4.5, 7.2.10, and 6.2.19, an authenticated user may use a specially crafted string to trigger a stack/heap out of bounds write on hyperloglog operations, potentially leading to remote code execution. The bug likely affects all Redis versions with hyperloglog operations implemented. This vulnerability is fixed in 8.0.3, 7.4.5, 7.2.10, and 6.2.19. An additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from executing hyperloglog operations. This can be done using ACL to restrict HLL commands."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-46686",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-07-23",
-        "description": "Redis through 8.0.3 allows memory consumption via a multi-bulk command composed of many bulks, sent by an authenticated user. This occurs because the server allocates memory for the command arguments of every bulk, even when the command is skipped because of insufficient permissions. NOTE: this is disputed by the Supplier because abuse of the commands network protocol is not a violation of the Redis Security Model."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-46817",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-10-03",
-        "description": "Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to cause an integer overflow and potentially lead to remote code execution The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-46818",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-10-03",
-        "description": "Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to manipulate different LUA objects and potentially run their own code in the context of another user. The problem exists in all versions of Redis with LUA scripting. This issue is fixed in version 8.2.2. A workaround to mitigate the problem without patching the redis-server executable is to prevent users from executing LUA scripts. This can be done using ACL to block a script by restricting both the EVAL and FUNCTION command families."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-46819",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-10-03",
-        "description": "Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted LUA script to read out-of-bound data or crash the server and subsequent denial of service. The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2. To workaround this issue without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to block a script by restricting both the EVAL and FUNCTION command families."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-48367",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-07-07",
-        "description": "Redis is an open source, in-memory database that persists on disk. An unauthenticated connection can cause repeated IP protocol errors, leading to client starvation and, ultimately, a denial of service. This vulnerability is fixed in 8.0.3, 7.4.5, 7.2.10, and 6.2.19."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-49112",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-06-02",
-        "description": "setDeferredReply in networking.c in Valkey through 8.1.1 has an integer underflow for prev->size - prev->used."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-49844",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2025-10-03",
-        "description": "Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to manipulate the garbage collector, trigger a use-after-free and potentially lead to remote code execution. The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2. To workaround this issue without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to restrict EVAL and EVALSHA commands."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2025-67733",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2026-02-23",
-        "description": "Valkey is a distributed key-value database. Prior to versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12, a malicious user can use scripting commands to inject arbitrary information into the response stream for the given client, potentially corrupting or returning tampered data to other users on the same connection. The error handling code for lua scripts does not properly handle null characters. Versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12 fix the issue."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2026-21863",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2026-02-23",
-        "description": "Valkey is a distributed key-value database. Prior to versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12, a malicious actor with access to the Valkey clusterbus port can send an invalid packet that may cause an out bound read, which might result in the system crashing. The Valkey clusterbus packet processing code does not validate that a clusterbus ping extension packet is located within buffer of the clusterbus packet before attempting to read it. Versions 9.0.2, 8.1.6, 8.0.7, and 7.2.12 fix the issue. As an additional mitigation, don't expose the cluster bus connection directly to end users, and protect the connection with its own network ACLs."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2026-23479",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2026-05-05",
-        "description": "Redis is an in-memory data structure store. In redis-server from 7.2.0 until 8.6.3, the unblock client flow does not handle an error return from `processCommandAndResetClient` when re-executing a blocked command. If a blocked client is evicted during this flow, an authenticated attacker can trigger a use-after-free that may lead to remote code execution. This has been patched in version 8.6.3."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2026-23631",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2026-05-05",
-        "description": "Redis is an in-memory data structure store. In all versions of redis-server with Lua scripting, an authenticated attacker can exploit the master-replica synchronization mechanism to trigger a use-after-free on replicas where replica-read-only is disabled or can be disabled, which may lead to remote code execution. A workaround is to prevent users from executing Lua scripts or avoid using replicas where replica-read-only is disabled. This is patched in version 8.6.3."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2026-25243",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2026-05-05",
-        "description": "Redis is an in-memory data structure store. In versions of redis-server up to 8.6.3, the RESTORE command does not properly validate serialized values. An authenticated attacker with permission to execute RESTORE can supply a crafted serialized payload that triggers invalid memory access and may lead to remote code execution. A workaround is to restrict access to the RESTORE command with ACL rules. This is patched in version 8.6.3."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DEBIAN-CVE-2026-66373",
-        "cve": "N/A",
-        "severity": "CVSS:3.1",
-        "published": "2026-07-25",
-        "description": "Redis before 8.8.0, in the unusual case where an authenticated attacker can execute RESTORE, allows remote code execution via a RESTORE payload where the same NACK (pending entry) is referenced by more than one consumer, because deleting both consumers via XGROUP DELCONSUMER leads to a double free. NOTE: this issue exists because of an incomplete fix for CVE-2026-25243."
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-1161-1",
+        "package": "nginx",
+        "vulnerability_id": "DLA-4091-1",
         "cve": "N/A",
         "severity": "N/A",
-        "published": "2017-11-05",
-        "description": "redis - security update"
+        "published": "2025-03-25",
+        "description": "nginx - security update"
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-1396-1",
+        "package": "nginx",
+        "vulnerability_id": "DLA-4228-1",
         "cve": "N/A",
         "severity": "N/A",
-        "published": "2018-06-26",
-        "description": "redis - security update"
+        "published": "2025-06-24",
+        "description": "nginx - security update"
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-1850-1",
+        "package": "nginx",
+        "vulnerability_id": "DSA-5281-1",
         "cve": "N/A",
         "severity": "N/A",
-        "published": "2019-07-10",
-        "description": "redis - security update"
+        "published": "2022-11-15",
+        "description": "nginx - security update"
     },
     {
         "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-2576-1",
+        "package": "nginx",
+        "vulnerability_id": "DSA-6131-1",
         "cve": "N/A",
         "severity": "N/A",
-        "published": "2021-02-25",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-2717-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2021-07-22",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-2717-2",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2021-08-27",
-        "description": "redis - regression update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-2810-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2021-11-05",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-3361-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2023-03-13",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-3396-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2023-04-21",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-3627-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2023-10-23",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-3885-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2024-09-10",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-3973-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2024-11-28",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-4025-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-01-20",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-4162-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-05-12",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-4240-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-07-12",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-4325-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-10-09",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DLA-577-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2016-07-30",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-3279-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2015-06-06",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-3412-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2015-12-03",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-3634-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2016-07-30",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-4230-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2018-06-17",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-4480-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2019-07-11",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-4731-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2020-07-19",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-5001-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2021-11-05",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-5081-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2022-02-18",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-5610-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2024-01-29",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-5856-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-01-30",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-5969-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-07-31",
-        "description": "redis - security update"
-    },
-    {
-        "ecosystem": "Debian",
-        "package": "redis",
-        "vulnerability_id": "DSA-6020-1",
-        "cve": "N/A",
-        "severity": "N/A",
-        "published": "2025-10-08",
-        "description": "redis - security update"
+        "published": "2026-02-12",
+        "description": "nginx - security update"
     }
 ]
