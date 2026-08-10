@@ -1,0 +1,1 @@
+from .discordapi import send_discord; from .telegramapi import send_telegram; from .config import load_config

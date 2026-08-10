@@ -17,6 +17,7 @@ ensure_deps()
 import requests, json, re, tomllib, yaml, os
 from pathlib import Path
 from colorama import Fore, Style, init
+from utils import send_discord, send_telegram, load_config
 
 class Vulnfy:
     def __init__(self):
@@ -108,6 +109,39 @@ class Vulnfy:
                         "published": publish_date,
                         "description": summary
                     })
+                    
+    def notifications(vuln_count: int, summary: str, report_f: str):
+        config = load_config()
+        enable_discord = config.get("notifications", {}).get("discord", {}).get("enabled", False)
+        enable_telegram = config.get("notifications", {}).get("telegram", {}).get("enabled", False)
+        
+        if enable_discord:
+            print("[*] Sending a notification to Discord...")
+            send_discord(vuln_count, summary, report_f)
+        if enable_telegram:
+            print("[*] Sending a notification to Telegram...")
+            send_telegram(vuln_count, summary, report_f)
+            
+    def small_summary(self) -> str:
+        if not self.report:
+            return "✅ No vulnerabilities were found"
+        
+        summary_lines = []
+        for vuln in self.report[:5]:
+            pkg = vuln.get("package", "N/A")
+            cve = vuln.get("cve", "N/A")
+            sev = vuln.get("severity", "N/A")
+            summary_lines.append(f"• **{pkg}** ({cve}) - `{sev}`")
+        
+        if len(self.report) > 5:
+            remaining = len(self.report) - 5
+            summary_lines.append(f"\n_... and {remaining} other vulnerabilities in the report._")
+        
+        return "\n".join(summary_lines)
+    
+    def reporting_notify():
+        vuln_count = len(scanner.report)
+        summary = scanner.get_summmary()
 
     def parse_py_reqs(self, f_path="requirements.txt"):
         deps = {}
@@ -462,3 +496,9 @@ if __name__ == "__main__":
                 scanner.scan_dependencies(deps, ecosystem, filename)
 
     scanner.save_rep()
+    vuln_count = len(scanner.report)
+    summary_text = scanner.small_summary()
+    report_file = "security_report.json"
+    notifications(vuln_count, summary_text, summary_text, report_file)
+    if vuln_count > 0:
+        sys.exit(1)
