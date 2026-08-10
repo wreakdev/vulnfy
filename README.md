@@ -1,11 +1,5 @@
 # Vulnfy
-![vulnfy](https://github.com/wreakdev/vulnfy/blob/main/vulnfy.png)
-
----
-
 **Vulnfy** is a lightweight, cross-platform dependency and container vulnerability scanner written in Python. It automatically detects project configuration/lock files across multiple languages and ecosystems, queries the OSV (Open Source Vulnerabilities) API, and generates a structured JSON vulnerability report.
-
----
 
 ## Features
 - **Multi-Ecosystem Support:** Scans dependencies for Python, Node.js, Go, PHP, Rust, and container base images.
