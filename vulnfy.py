@@ -431,7 +431,6 @@ def notifications(vuln_count: int, summary: str, report_f: str):
         print("[*] Sending a notification to Telegram...")
         send_telegram(vuln_count, summary, report_f)
 
-
 def main():
     cy = Fore.CYAN
     rst = Fore.RESET
@@ -469,7 +468,7 @@ def main():
         if full_loc:
             deps = parse_func(full_loc)
             if deps:
-                ecosystem = "Debian"  # fallback
+                ecosystem = "Debian"
                 for image_name in deps.keys():
                     image_lower = image_name.lower()
                     if "alpine" in image_lower:
@@ -494,15 +493,22 @@ def main():
                 print(f"{cy}[+] {rst}{filename}: Detected {ecosystem}")
                 scanner.scan_dependencies(deps, ecosystem, filename)
 
-    scanner.save_rep()
     vuln_count = len(scanner.report)
     summary_text = scanner.small_summary()
-    report_file = "security_report.json"    
-    notifications(vuln_count, summary_text, report_file)
+    report_file = "security_report.json"
+    
+    if vuln_count > 0:
+        scanner.save_rep()
+        report_path = report_file
+    else:
+        if os.path.exists(report_file):
+            os.remove(report_file)
+        report_path = None
+    
+    notifications(vuln_count, summary_text, report_path)
     
     if vuln_count > 0:
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()
