@@ -1,6 +1,13 @@
 # Vulnfy
 **Vulnfy** is a lightweight, cross-platform dependency and container vulnerability scanner written in Python. It automatically detects project configuration/lock files across multiple languages and ecosystems, queries the OSV (Open Source Vulnerabilities) API, and generates a structured JSON vulnerability report.
 
+---
+
+## Telegram Showcase
+![telegramapi](https://github.com/wreakdev/vulnfy/blob/main/telegramapi.png)
+
+---
+
 ## Features
 - **Multi-Ecosystem Support:** Scans dependencies for Python, Node.js, Go, PHP, Rust, and container base images.
 - **Batch OSV API Integration:** Efficiently checks packages in bulk using the OSV batch query API.
@@ -33,8 +40,8 @@ This is a Python example, but some results do not have an assigned CVE.
 },
 ```
 
-## Configuration (`config.yaml`)
-Create a `config.yaml` file in the root directory to enable notifications:
+## Configuration (`vulnfy.yaml`)
+Create a `vulnfy.yaml` file in the root directory to enable notifications:
 ```yaml
 notifications:
   discord:
@@ -64,6 +71,7 @@ name: Vulnfy Security Scan
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   vulnfy:
@@ -72,12 +80,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Vulnfy
+        run: pip install git+https://github.com/wreakdev/vulnfy.git
+
       - name: Run Vulnfy Scanner
-        uses: wreakdev/vulnfy@main
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: vulnfy .
 ```
 
 ## Installation

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vulnfy"
+version = "0.1.0"
+description = "Vulnfy Security Scanner"
+requires-python = ">=3.11"
+
+[project.scripts]
+vulnfy = "vulnfy:main"
+
+[tool.setuptools]
+py-modules = ["vulnfy"]
+packages = ["utils"]

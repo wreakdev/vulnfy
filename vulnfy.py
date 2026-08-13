@@ -3,7 +3,7 @@ def ensure_deps():
     import sys, subprocess
     required = {
         "requests": "requests",
-        "coloram": "colorama",
+        "colorama": "colorama",
         "yaml": "PyYAML"
     }
     
@@ -13,8 +13,8 @@ def ensure_deps():
         except ImportError:
             subprocess.check_call([sys.executable, "-m", "pip", "install", pipname])
 
-ensure_deps()            
-import requests, json, re, tomllib, yaml, os
+ensure_deps()        
+import requests, json, re, tomllib, yaml, os, sys
 from pathlib import Path
 from colorama import Fore, Style, init
 from utils import send_discord, send_telegram, load_config
@@ -110,18 +110,6 @@ class Vulnfy:
                         "description": summary
                     })
                     
-    def notifications(vuln_count: int, summary: str, report_f: str):
-        config = load_config()
-        enable_discord = config.get("notifications", {}).get("discord", {}).get("enabled", False)
-        enable_telegram = config.get("notifications", {}).get("telegram", {}).get("enabled", False)
-        
-        if enable_discord:
-            print("[*] Sending a notification to Discord...")
-            send_discord(vuln_count, summary, report_f)
-        if enable_telegram:
-            print("[*] Sending a notification to Telegram...")
-            send_telegram(vuln_count, summary, report_f)
-            
     def small_summary(self) -> str:
         if not self.report:
             return "✅ No vulnerabilities were found"
@@ -138,10 +126,6 @@ class Vulnfy:
             summary_lines.append(f"\n_... and {remaining} other vulnerabilities in the report._")
         
         return "\n".join(summary_lines)
-    
-    def reporting_notify():
-        vuln_count = len(scanner.report)
-        summary = scanner.get_summmary()
 
     def parse_py_reqs(self, f_path="requirements.txt"):
         deps = {}
@@ -435,11 +419,25 @@ class Vulnfy:
         print(f"\n{self.rd}[!!] {self.rst}Scan done, Found vulns: {len(self.report)}")
         print(f"{self.grn}[#] {self.rst}Results saved in {out_f}")
 
-if __name__ == "__main__":
+def notifications(vuln_count: int, summary: str, report_f: str):
+    config = load_config()
+    enable_discord = config.get("notifications", {}).get("discord", {}).get("enabled", False)
+    enable_telegram = config.get("notifications", {}).get("telegram", {}).get("enabled", False)
+    
+    if enable_discord:
+        print("[*] Sending a notification to Discord...")
+        send_discord(vuln_count, summary, report_f)
+    if enable_telegram:
+        print("[*] Sending a notification to Telegram...")
+        send_telegram(vuln_count, summary, report_f)
+
+
+def main():
     cy = Fore.CYAN
     rst = Fore.RESET
     scanner = Vulnfy()
     acc_loc = os.getcwd()
+    
     def get_loc(filename):
         full_loc = os.path.join(acc_loc, filename)
         return full_loc if os.path.isfile(full_loc) else None
@@ -460,11 +458,12 @@ if __name__ == "__main__":
     if loc: scanner.scan_dependencies(scanner.parse_cargo_lock(loc), "crates.io", "Cargo.lock")
     loc = get_loc("Cargo.toml")
     if loc: scanner.scan_dependencies(scanner.parse_cargo_toml(loc), "crates.io", "Cargo.toml")
+    
     targets = [
         ("Dockerfile", scanner.parse_dockerfile),
         ("docker-compose.yml", scanner.parse_docker_compose)
     ]
-    
+
     for filename, parse_func in targets:
         full_loc = get_loc(filename)
         if full_loc:
@@ -498,7 +497,12 @@ if __name__ == "__main__":
     scanner.save_rep()
     vuln_count = len(scanner.report)
     summary_text = scanner.small_summary()
-    report_file = "security_report.json"
-    notifications(vuln_count, summary_text, summary_text, report_file)
+    report_file = "security_report.json"    
+    notifications(vuln_count, summary_text, report_file)
+    
     if vuln_count > 0:
         sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
