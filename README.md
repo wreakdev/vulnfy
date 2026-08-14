@@ -15,6 +15,7 @@
 - **CI/CD Ready:** Exits with a non-zero status code (`sys.exit(1)`) if vulnerabilities are found, making it ideal for automation.
 - **Automatic Dependency Resolution:** Automatically installs missing requirements (`requests`, `colorama`, `PyYAML`) on first run.
 - **Structured Output:** Exports all discovered vulnerabilities and associated CVEs into a clean JSON report.
+- **Alerting:** Sends CVEs via `security_report.json` to Discord or Telegram, depending on your configuration in `vulnfy.yaml`.
 
 ## Supports
 | Lang          | File          |
