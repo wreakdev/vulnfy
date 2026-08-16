@@ -15,6 +15,7 @@ def ensure_deps():
 
 ensure_deps()        
 import requests, json, re, tomllib, yaml, os, sys
+import argparse
 from pathlib import Path
 from colorama import Fore, Style, init
 from utils import send_discord, send_telegram, load_config
@@ -433,12 +434,24 @@ def notifications(vuln_count: int, summary: str, report_f: str):
 
 def main():
     cy = Fore.CYAN
+    rd = Fore.RED
+    w = Fore.WHITE
     rst = Fore.RESET
+    parser = argparse.ArgumentParser(description="Vulnfy - Vulns Scanner")
+    parser.add_argument("-p", "--path", type=str, default=".", help="Path to the directory you want to scan (default is the current directory).")
+    parser.add_argument("-o", "--output", type=str, default="security_report.json", help="Output file path for the report.")
+    args = parser.parse_args()
+    trg_dir = os.path.abspath(args.path)
+    report_f = os.path.abspath(args.output)
+    if not os.path.isdir(trg_dir):
+        print(f"{rd}[!] {w}Error: folder '{trg_dir}' does not exists.")
+        sys.exit(1)
+    print(f"{cy}[+] {w}Scanning Path: {trg_dir}")
+
     scanner = Vulnfy()
-    acc_loc = os.getcwd()
     
     def get_loc(filename):
-        full_loc = os.path.join(acc_loc, filename)
+        full_loc = os.path.join(trg_dir, filename)
         return full_loc if os.path.isfile(full_loc) else None
 
     loc = get_loc("requirements.txt")
@@ -495,14 +508,14 @@ def main():
 
     vuln_count = len(scanner.report)
     summary_text = scanner.small_summary()
-    report_file = "security_report.json"
+    #report_file = "security_report.json"
     
     if vuln_count > 0:
-        scanner.save_rep()
-        report_path = report_file
+        scanner.save_rep(report_f)
+        report_path = report_f
     else:
-        if os.path.exists(report_file):
-            os.remove(report_file)
+        if os.path.exists(report_f):
+            os.remove(report_f)
         report_path = None
     
     notifications(vuln_count, summary_text, report_path)

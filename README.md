@@ -103,8 +103,8 @@ curl -sSL https://github.com/wreakdev/vulnfy/blob/main/vulnfy_setup.sh | bash
 ```
 
 ## Usage
-There is no arguments for now.
-```bash
-vulnfy
-```
-Find the project you want to check and launch it.
+| Command | Description |
+| :--- | :--- |
+| `vulnfy` | Scans the current directory (default) |
+| `vulnfy --path <dir>` (Or `-p`) | Scans a custom directory |
+| `vulnfy --output <filename>` (Or `-o`) | Custom report file (Only json) |
