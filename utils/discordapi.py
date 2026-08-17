@@ -10,8 +10,7 @@ def send_discord(vuln_count: int, report_summary: str, report_fpath: str = None)
         color = 0xFF0000
         text = f"Found {vuln_count} vulnerabilities"
     else:
-        color = 0x00FF00
-        text = "No vulnerabilities Found"
+        return
         
     payload = {
         "username": "Vulnfy - Vulns Scanner",

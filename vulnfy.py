@@ -433,22 +433,22 @@ def notifications(vuln_count: int, summary: str, report_f: str):
         send_telegram(vuln_count, summary, report_f)
 
 def main():
-    cy = Fore.CYAN
-    rd = Fore.RED
-    w = Fore.WHITE
-    rst = Fore.RESET
     parser = argparse.ArgumentParser(description="Vulnfy - Vulns Scanner")
     parser.add_argument("-p", "--path", type=str, default=".", help="Path to the directory you want to scan (default is the current directory).")
     parser.add_argument("-o", "--output", type=str, default="security_report.json", help="Output file path for the report.")
+    parser.add_argument("--fail-on", type=str, choices=["low", "medium", "high", "critical"], default="high", help="Minimum severity for CI failure")
     args = parser.parse_args()
+    
     trg_dir = os.path.abspath(args.path)
     report_f = os.path.abspath(args.output)
-    if not os.path.isdir(trg_dir):
-        print(f"{rd}[!] {w}Error: folder '{trg_dir}' does not exists.")
-        sys.exit(1)
-    print(f"{cy}[+] {w}Scanning Path: {trg_dir}")
-
+    
     scanner = Vulnfy()
+
+    if not os.path.isdir(trg_dir):
+        print(f"{scanner.rd}[!] {scanner.w}Error: folder '{trg_dir}' does not exists.")
+        sys.exit(1)
+        
+    print(f"{scanner.cy}[+] {scanner.w}Scanning Path: {trg_dir}")
     
     def get_loc(filename):
         full_loc = os.path.join(trg_dir, filename)
@@ -503,25 +503,64 @@ def main():
                         ecosystem = "Amazon Linux"
                         break
 
-                print(f"{cy}[+] {rst}{filename}: Detected {ecosystem}")
+                print(f"{scanner.cy}[+] {scanner.rst}{filename}: Detected {ecosystem}")
                 scanner.scan_dependencies(deps, ecosystem, filename)
+
+    ignored_vulns = set()
+    ignore_f = os.path.join(trg_dir, ".vulnignore")
+    if os.path.exists(ignore_f):
+        with open(ignore_f, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    ignored_vulns.add(line)
+    
+    if ignored_vulns:
+        filtered_rep = []
+        for vuln in scanner.report:
+            v_id = vuln.get("vulnerability_id", "")
+            cve = vuln.get("cve", "")
+            if v_id in ignored_vulns or cve in ignored_vulns:
+                continue
+            filtered_rep.append(vuln)
+        scanner.report = filtered_rep
 
     vuln_count = len(scanner.report)
     summary_text = scanner.small_summary()
-    #report_file = "security_report.json"
     
+    should_fail = False
+    report_path = None
+
     if vuln_count > 0:
+        severity_lvls = {"low": 1, "medium": 2, "high": 3, "critical": 4}
+        threshold = severity_lvls.get(args.fail_on, 3)
+        
+        for vuln in scanner.report:
+            sev = vuln.get("severity", "low").lower()
+            lvl = severity_lvls.get(sev, 1)
+            if lvl >= threshold:
+                should_fail = True
+                break
+        
         scanner.save_rep(report_f)
         report_path = report_f
+        
+        if should_fail:
+            print(f"{scanner.rd}[!] {scanner.rst}CI Failed: Vulnerabilities reaching the threshold found '{args.fail_on}'.")
+            send_discord(vuln_count, summary_text, report_fpath=report_path)
+            send_telegram(vuln_count, summary_text, report_fpath=report_path)
+        else:
+            print(f"{scanner.grn}[#] {scanner.rst}Vulnerabilities found, but none exceeded the '{args.fail_on}' threshold. CI passed.")
     else:
         if os.path.exists(report_f):
             os.remove(report_f)
-        report_path = None
-    
-    notifications(vuln_count, summary_text, report_path)
-    
-    if vuln_count > 0:
+        print(f"{scanner.grn}[+] {scanner.rst}No vulnerabilities found (or all were ignored). CI passed.")
+        
+    if vuln_count > 0 and should_fail:
         sys.exit(1)
+    else:
+        sys.exit(0)
+
 
 if __name__ == "__main__":
     main()

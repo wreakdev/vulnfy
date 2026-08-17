@@ -14,8 +14,7 @@ def send_telegram(vuln_count: int, report_summary: str, report_fpath: str = None
         emoji = "⚠️"
         text = f"Found {vuln_count} vulnerabilities"
     else:
-        emoji = "✅"
-        text = "No vulnerabilities found"
+        return
         
     payload = (
         f"{emoji} *Vulnfy Security Scan Results*\n"
