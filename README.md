@@ -4,7 +4,7 @@
 ---
 
 ## Telegram Showcase
-![telegramapi](https://github.com/wreakdev/vulnfy/blob/main/telegramapi.png)
+![telegramapi](https://github.com/wxwreak/vulnfy/blob/main/telegramapi.png)
 
 ---
 
@@ -98,7 +98,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Vulnfy
-        run: pip install git+https://github.com/wreakdev/vulnfy.git
+        run: pip install git+https://github.com/wxwreak/vulnfy.git
 
       - name: Run Vulnfy Scanner
         env:
@@ -110,7 +110,7 @@ jobs:
 
 ## Installation
 ```bash
-curl -sSL https://github.com/wreakdev/vulnfy/blob/main/vulnfy_setup.sh | bash
+curl -sSL https://github.com/wxwreak/vulnfy/blob/main/vulnfy_setup.sh | bash
 ```
 
 ## Usage
